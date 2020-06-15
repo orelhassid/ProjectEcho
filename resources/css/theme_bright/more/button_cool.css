@@ -1,0 +1,298 @@
+/* line 7, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  /* BUTTON 1 */
+  /* BUTTON 2 */
+  /* BUTTON 3 */
+  /* BUTTON 4 */
+  /* BUTTON 5 */
+  /* BUTTON 6 */
+}
+
+/* line 12, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 34px;
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+}
+
+/* line 23, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn {
+  color: #2c3e50;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
+  border: 0.2em solid #2c3e50;
+  padding: 0.4em;
+  text-align: center;
+  transition: box-shadow 0.25s , transform 0.25s;
+}
+
+/* line 37, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn:hover {
+  box-shadow: 0 4em 0 0 #2c3e50 inset, 0em 0em 0 0 #bbb;
+  transform: translate(0.3em, 0.2em);
+  color: #fff;
+}
+
+/* line 46, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn2 {
+  background-color: #5b657c;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+  color: #fff;
+  letter-spacing: .1em;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition-property: transform;
+  transform: translateZ(0);
+  transition: box-shadow 0.5s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+
+/* line 63, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn2:hover {
+  box-shadow: 0 0 0 28px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* line 67, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn2:active {
+  transform: translateY(3px);
+}
+
+/* line 74, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3 {
+  color: #333;
+  font-size: .8em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  min-width: 100px;
+  max-width: 60%;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* line 86, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3:after, div.coolBtnWrap .coolBtn3:before {
+  content: "";
+  position: absolute;
+  left: -1em;
+  top: -2px;
+  height: 3.3em;
+  width: 0;
+  border: 1px solid #c75842;
+  transition: inherit;
+}
+
+/* line 97, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3:after {
+  left: auto;
+  right: -1em;
+}
+
+/* line 102, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3:hover {
+  border-color: #c75842;
+  transition: border-color 0.2s 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* line 106, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3:hover:after, div.coolBtnWrap .coolBtn3:hover:before {
+  right: -2px;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* line 111, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn3:hover:before {
+  left: -2px;
+  right: auto;
+}
+
+/* line 120, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn4 {
+  background: #f1c40f;
+  color: #fefefe;
+  transition: box-shadow .18s ease;
+}
+
+/* line 125, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn4:hover {
+  box-shadow: inset 0 0 0 5px #c29d0b;
+}
+
+/* line 132, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn5 {
+  border: none;
+  outline: none;
+  color: #fefefe;
+  background-color: #9b59b6;
+  border-radius: 3px;
+}
+
+/* line 139, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn5:hover, div.coolBtnWrap .coolBtn5:focus {
+  transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+  animation: gelatine 0.5s 1;
+}
+
+@-webkit-keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+  from, to {
+    -webkit-transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@-moz-keyframes gelatine {
+  from, to {
+    -moz-transform: scale(1, 1);
+  }
+  25% {
+    -moz-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -moz-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -moz-transform: scale(0.95, 1.05);
+  }
+  from, to {
+    -moz-transform: scale(1, 1);
+  }
+  25% {
+    -moz-transform: scale(0.9, 1.1);
+  }
+  50% {
+    -moz-transform: scale(1.1, 0.9);
+  }
+  75% {
+    -moz-transform: scale(0.95, 1.05);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+  }
+}
+
+@keyframes gelatine {
+  from, to {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    -moz-transform: scale(0.9, 1.1);
+    -ms-transform: scale(0.9, 1.1);
+    -o-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    -moz-transform: scale(1.1, 0.9);
+    -ms-transform: scale(1.1, 0.9);
+    -o-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    -moz-transform: scale(0.95, 1.05);
+    -ms-transform: scale(0.95, 1.05);
+    -o-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+  from, to {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 1.1);
+    -moz-transform: scale(0.9, 1.1);
+    -ms-transform: scale(0.9, 1.1);
+    -o-transform: scale(0.9, 1.1);
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 0.9);
+    -moz-transform: scale(1.1, 0.9);
+    -ms-transform: scale(1.1, 0.9);
+    -o-transform: scale(1.1, 0.9);
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    -moz-transform: scale(0.95, 1.05);
+    -ms-transform: scale(0.95, 1.05);
+    -o-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.05);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+/* line 179, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn6 {
+  padding: 13px 0;
+  border: 1px solid #333;
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 189, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_cool.scss */
+div.coolBtnWrap .coolBtn6:hover {
+  background: #333;
+  border: 1px solid #333;
+  color: #fefefe;
+  border-radius: 30px;
+}

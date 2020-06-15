@@ -1,0 +1,38 @@
+/*@media screen and (max-width: 780px) {
+  main.mainContainer {
+    width: 100%;
+  }
+    h1.logo {
+	font-size:58px;
+}
+    h1.logo i{
+    font-size: 31px;
+}
+    nav.main-nav {
+    font-weight: 900;
+}
+    nav.main-nav ul.nav-bar-items-bottom li{
+    display: inline;
+    margin-right: 25px;
+    font-size: 22px;
+}
+    li.bar-items {
+	margin-right:32px;
+	font-size:22px;
+	font-family:font_english;
+}
+    li.singup, li.login {
+    font-size: 30px;
+    padding: 1px 6px;
+}
+}*/
+@media screen and (min-width: 580px) {
+  /* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/responsive.scss */
+  div.WRAPPER main.MainFlexBox aside.asideContainer {
+    width: 50%;
+  }
+  /* line 37, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/responsive.scss */
+  div.WRAPPER .div.wrapper-form {
+    flex-grow: 1;
+  }
+}

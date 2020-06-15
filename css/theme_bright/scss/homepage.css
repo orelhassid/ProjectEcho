@@ -1,0 +1,404 @@
+/* line 2, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer > article {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background: transparent;
+  margin-bottom: 10px auto;
+  padding: 80px 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 12, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-1 {
+  min-height: 850px;
+  background-image: url("../../../sourceimages/wallpapers/wall_010.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 4px green;
+}
+
+/* line 20, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-1 .TEXT_WRITE {
+  width: 50%;
+}
+
+/* line 23, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-1 span.article-title {
+  display: block;
+  font-size: 82px;
+  padding: 20px 10px;
+}
+
+/* line 28, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-1 p.article-text {
+  font-size: 54px;
+  display: inline-block;
+  width: 50%;
+  margin: 0px;
+}
+
+/* line 35, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-1 span.article-emphasize {
+  font-size: 32px;
+  color: #994c00;
+}
+
+/* line 41, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 {
+  padding-top: 0px;
+}
+
+/* line 43, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 nav.features-nav {
+  width: 100%;
+  height: 150px;
+  padding: 0px;
+  margin-bottom: 15px;
+  background: rgba(200, 200, 200, 0.5);
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 nav.features-nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-bottom: 3px solid black;
+  font-family: font_hebrew, font_english;
+}
+
+/* line 59, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 nav.features-nav ul li {
+  list-style: none;
+  padding: 20px 10px;
+  background-color: #0097A7;
+  margin: 35px 10px;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 8px 5px #222;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 71, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 nav.features-nav ul li:active {
+  color: pink;
+}
+
+/* line 74, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .active {
+  border-radius: 7px;
+  transform: translateY(5px);
+  box-shadow: 0px 2px 5px #000 !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  background-color: #016c77 !important;
+  color: #444444;
+}
+
+/* line 82, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus {
+  padding: 25px 50px;
+  border-top: 4px solid lightblue;
+  width: 100%;
+}
+
+/* line 86, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus span {
+  font-size: 42px;
+  text-shadow: 0px 0px 2px black;
+}
+
+/* line 90, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus p {
+  font-size: 28px;
+  color: red;
+}
+
+/* line 94, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus hr {
+  margin: 15px 0;
+  opacity: 1;
+  width: 150px;
+}
+
+/* line 99, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus a button {
+  margin: 10px;
+  padding: 15px;
+  font-size: 32px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 2px #222;
+  background: #43A047;
+  color: white;
+}
+
+/* line 107, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.index-learnfromus a button:hover {
+  transform: scale(1.08);
+}
+
+/* line 112, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.programming {
+  display: flex;
+}
+
+/* line 113, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.computers {
+  display: none;
+}
+
+/* line 114, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.graphic {
+  display: none;
+}
+
+/* line 115, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.animation {
+  display: none;
+}
+
+/* line 116, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 div.music {
+  display: none;
+}
+
+/* line 118, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px 25px;
+  padding: 15px 25px;
+  width: 80%;
+  height: auto;
+  border-left: 5px solid rgba(72, 209, 204, 0.7);
+  /*box-shadow: inset 0 0 5px rgba(0,255,127,0.4);*/
+  border-right: 5px solid whitesmoke;
+  border-bottom-left-radius: 65px;
+  border-top-left-radius: 65px;
+  background: linear-gradient(to right, deepskyblue 0.2%, rgba(200, 255, 255, 0) 80%, rgba(200, 255, 255, 0) 100%);
+  font-family: font_english;
+  transition: 1s;
+}
+
+/* line 133, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items {
+  margin: 20px;
+  font-size: 32px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: lightblue;
+  box-shadow: 2px 2px 3px grey;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+/* line 143, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px grey;
+  cursor: pointer;
+}
+
+/* line 148, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .header {
+  background-color: red;
+  display: block;
+  padding: 15px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* line 155, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .html {
+  background-color: #cb4335;
+}
+
+/* line 156, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .css {
+  background-color: #f1c40f;
+}
+
+/* line 157, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .javascript {
+  background-color: #229954;
+}
+
+/* line 158, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .php {
+  background-color: #2e86c1;
+}
+
+/* line 159, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .sql {
+  background-color: #283747;
+}
+
+/* line 160, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .AngularJS {
+  background-color: #797d7f;
+}
+
+/* line 161, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .JAVA {
+  background-color: #e67e22;
+}
+
+/* line 162, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .PYTHON {
+  background-color: #f7dc6f;
+}
+
+/* line 163, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .C {
+  background-color: #73c6b6;
+}
+
+/* line 164, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .RUBY {
+  background-color: #c0392b;
+}
+
+/* line 166, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .it {
+  background-color: #cb4335;
+}
+
+/* line 167, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .ccna {
+  background-color: #f1c40f;
+}
+
+/* line 168, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .ceh {
+  background-color: #229954;
+}
+
+/* line 169, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .servers {
+  background-color: #2e86c1;
+}
+
+/* line 170, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .software {
+  background-color: #283747;
+}
+
+/* line 171, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .triks {
+  background-color: #797d7f;
+}
+
+/* line 173, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .photoshop {
+  background-color: #cb4335;
+}
+
+/* line 174, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .illustrator {
+  background-color: #f1c40f;
+}
+
+/* line 175, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .photographiy {
+  background-color: #229954;
+}
+
+/* line 176, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .maya {
+  background-color: #2e86c1;
+}
+
+/* line 177, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .mask {
+  background-color: #283747;
+}
+
+/* line 178, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .blender {
+  background-color: #797d7f;
+}
+
+/* line 180, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .dj {
+  background-color: #797d7f;
+}
+
+/* line 181, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .breakdance {
+  background-color: #e67e22;
+}
+
+/* line 182, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .hiphop {
+  background-color: #f7dc6f;
+}
+
+/* line 183, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .cwalk {
+  background-color: #73c6b6;
+}
+
+/* line 184, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .flex-courses .items .parkur {
+  background-color: #c0392b;
+}
+
+/* line 186, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .arrows {
+  position: absolute;
+  top: 10px;
+  font-size: 52px;
+  color: lightyellow;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
+
+/* line 194, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .next {
+  right: 0px;
+}
+
+/* line 195, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-2 .prev {
+  left: 0px;
+}
+
+/* line 199, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-3 div.flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* line 205, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-3 div.flexbox div {
+  width: 250px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* line 209, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-3 div.flexbox div span.flexbox-title {
+  font-size: 42px;
+}
+
+/* line 212, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-3 div.flexbox div p.flexbox-text {
+  margin: 0px;
+  padding: 10px;
+  width: inherit;
+  max-height: 150px;
+  font-size: 28px;
+}
+
+/* line 219, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/homepage.scss */
+section.mainContainer article.index-article-3 div.flexbox div img {
+  width: 100%;
+}

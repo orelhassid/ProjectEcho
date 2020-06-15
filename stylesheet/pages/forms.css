@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+}
+
+@font-face {
+	font-family:font_01;
+	src: url("../../extensions/fonts/font_01/Digitalt.otf");
+}
+@font-face {
+	font-family:font_02;
+	src: url("../../extensions/fonts/font_02/trench100free.otf");
+	font-weight:900;
+	text-shadow:0px 0px 2px black;
+}
+
+div.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 80%;
+    padding: 15px;
+    margin: auto;
+    background: rgba(245,245,215,0.8);
+    border-radius: 5px;
+    transition: transform 1s;
+}
+div.container h1 {
+    font-family: font_01;
+    font-size: 38px;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+}
+div.container h1:after {
+    content: '';
+    width: 80%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color:darkslateblue;
+}
+
+form {
+    width:100%;
+    height: 100%;
+    margin: 5px auto;
+    padding-top: 5%;
+}
+
+form input {
+    display: block;
+    width:80%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 35px;
+    border:1px solid #ccc;
+}
+form div {
+    width:80%;
+    height: 120px;
+    margin:5px auto;
+}
+form div button {
+    width: 30%;
+    padding: 15px;
+    margin-left: 25px;
+    font-size: 22px;
+    color:#ECEFF1;
+    border-radius: 45px;
+    background-color: rgb(46, 125, 50);
+    cursor: pointer;
+}
+form div #login-btn, #signup-btn {
+    width:20%;
+    padding: 5px;
+    position: relative;
+    top: 35px;
+    left: -15px;
+    background-color: rgb(229, 57, 53);
+}
+form div p {
+    display: inline;
+    position: relative;
+    top: 35px;
+}
+
+div.login {
+    transform: rotateY(90deg);
+    transition: transform 1s;
+}
+
+/*Alert Box*/
+#alert-box {
+    font-size: 45px;
+    position: absolute;
+    left: 2px;
+    top: 120px;
+    min-height: 80px;
+    min-width: 350px;
+    padding: 20px;
+    background-color: #f11;
+    color: white;
+    margin-bottom: 15px;
+    border-left: 10px solid #D32F2F;
+    box-shadow: 2px 2px solid grey;
+    border-radius: 5px;
+}
+
+#background {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-image: url("../../sourceimages/wallpapers/wall_02.jpeg");
+	background-size: cover;
+	background-position:center;
+	background-repeat:;
+	filter:;
+	z-index:-1;
+}

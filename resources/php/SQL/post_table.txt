@@ -1,0 +1,11 @@
+CREATE TABLE Post_table(
+    post_id int NOT NULL AUTO_INCREMENT,
+    post_url varchar(100) NOT NULL,
+    post_date varchar(50) NOT NULL,
+    post_title varchar(100) NOT NULL,
+    post_content varchar(7000) NOT NULL,
+    post_rate varchar(1000) NOT NULL,   
+    post_links varchar(500) NOT NULL,
+    post_photo varchar(200) NOT NULL,
+    PRIMARY KEY(post_id)
+);

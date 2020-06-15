@@ -1,0 +1,221 @@
+/***********************
+First Section -->> Openning
+***********************/
+section#openning, section#cources, section#features, section#adventages {
+	width:90%;
+	height:400px;
+	margin:20px auto;
+	padding-top:150px;
+	position:relative;
+	background-color:rgba(245, 245, 245, 0.8);
+	box-shadow: 0px 0px 5px 10px rgba(245, 245, 245, 0.8);
+}
+section#openning div#content {
+	text-align:center;
+	filter:drop-shadow(1px 1px 2px black);
+	text-shadow: 1px 1px white, -1px -1px #444;;
+	
+}
+section#openning div#content h2 {
+	font-size:90px;
+}
+section#openning div#content p {
+	font-size:28px;
+	color: rgb(0,76,153);
+}
+section#openning div#content p span {
+	font-size:32px;
+	color: rgb(153,76,0);
+}
+
+/***********************
+Second Section -->> Features
+***********************/
+section#features {
+	height:50px;
+	padding:0;
+}
+
+div#features-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin:0 auto;
+}
+div#features-nav .tab{
+	font-size:22px;
+}
+div#features-nav .tab.active:after{
+	content: '';
+	display:block;
+	background-color:lightblue;
+	height:4px;
+	width:100%;
+	margin: 5px auto 0;
+}
+
+
+/***********************
+Third Section -->> Cources
+***********************/
+
+section#cources { /*The Third Section -> COURCES*/
+	height:750px;
+	padding-top:100px;
+}
+section#cources div#content h1{ /*The header : "OUR COURCES" */
+	font-size:32px;
+}
+section#cources hr {
+	margin:15px auto;
+	opacity:0;
+}
+section#cources aside {
+	position:absolute;
+	top:150px;
+	right:5px;
+    padding: 15px;
+	width:250px;
+	height:40%;
+    
+}
+section#cources aside h3 {
+	font-size:52px;	
+	font-family:font_02;
+	text-shadow:0px 0px 2px black;
+}
+section#cources aside p {
+	font-size:22px;	
+	font-family:font_02;
+}
+section#cources aside hr {
+    margin: 15px 0;
+    opacity: 1;
+    width: 150px;
+}
+section#cources aside a button {
+    margin: 80px auto;
+    width:180px;
+    height:80px;
+    font-size:22px;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px #ccc, inset 5px 5px 5px #A93226, inset -5px -5px 5px #3498DB;
+    border:2px solid grey;
+    border-radius: 40px 10px;
+    cursor: pointer;
+    background: radial-gradient(#58D68D,#16A085); 
+}
+section#cources aside a button:hover {
+    transform:scale(1.08);
+}
+
+#flex-cources {
+	display: inline-block;
+    height: 400px;
+    /*flex-wrap: wrap;
+    table-layout: fixed;*/
+}
+
+#flex-cources .items {
+	font-size:32px;
+	width:200px;
+	height:200px;
+	margin:10px;
+	text-align:center;
+	background-color:lightblue;
+	box-shadow:2px 2px 3px grey;
+	border-radius:10px;
+    transition: transform 0.5s;
+}
+#flex-cources .items:hover {
+    transform: scale(1.05);
+    box-shadow:2px 2px 8px grey;
+    cursor: pointer;
+}
+.items .header{
+	background-color:red;
+	display:block;
+	padding:15px;
+	border-radius:5px 5px 0px 0px;
+}
+
+.items .html { background-color:rgba(203, 67, 53, 1); }
+.items .css { background-color:rgba(241, 196, 15, 1); }
+.items .javascript { background-color:rgba(34, 153, 84, 1); }
+.items .php { background-color:rgba(46, 134, 193, 1); }
+.items .sql { background-color:rgba(40, 55, 71, 1); }
+.items .AngularJS { background-color:rgba(121, 125, 127, 1); }
+.items .JAVA { background-color:rgba(230, 126, 34, 1); }
+.items .PYTHON { background-color:rgba(247, 220, 111, 1); }
+.items .C { background-color:rgba(115, 198, 182, 1); }
+.items .RUBY { background-color:rgba(192, 57, 43, 1); }
+
+/***********************
+Fourth Section -->> Adventages
+***********************/
+section#adventages {
+    height: 500px;
+}
+section#adventages h2 {
+    text-align: center;
+    font-size:52px;
+    letter-spacing:15px;
+    transform: translateY(-100px);
+    
+}
+section#adventages h2:after {
+    content: '';
+	display:block;
+	background-color:lightcoral;
+	height:5px;
+	width:60%;
+	margin: 5px auto 0;
+}
+div#adventages-flex {
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 150px 0;
+    margin: 2 auto;
+    font-family: font_02;
+}
+div#adventages-flex div.adventages-items {
+    display: table-cell;
+    background-color:antiquewhite;
+    width: 33.3%;
+    height:200px;
+    border-radius: 50%;
+    border:2px solid #ccc;
+}
+div#adventages-flex div.adventages-items i {
+    font-size: 10em;
+    margin: 20px auto;
+}
+div#adventages-flex div.adventages-items p {
+    font-size: 22px;
+    width: 250px;
+    margin: 0px auto;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    #flex-cources {
+	display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    }
+    
+    #flex-cources .items {
+        width:100px;
+        height:100px;
+        font-size:22px;
+    }
+    
+    section#cources aside h3 {
+	font-size:32px;	
+    }
+}

@@ -1,0 +1,382 @@
+
+section.mainContainer {
+
+nav.nav-courses-intro-topics{
+	width: 15%;
+	height: auto;
+	background-color: #ddd;
+  resize: both;
+ ul{
+	padding: 5px;
+	height: 1600px;
+	overflow: hidden;
+	overflow-y: scroll;
+li{
+  position: relative;
+  display: block;
+	padding: 10px 15px;
+	font-size: 22px;
+  font-weight: 900;
+	background-color: #eee;
+  &:hover:not(.active){
+  	background-color: #c4fff7;
+  }
+  &.active{
+  	background-color: #1bad9b;
+  	border-left: 5px solid black;
+  	border-radius: 5px 10px;
+  }
+  & + .tooltip > .tooltip-inner {
+      background-color: #73AD21;
+      color: #FFFFFF;
+      border: 1px solid #5D6D7E;
+      padding: 15px;
+      font-size: 20px;
+  }
+  a {
+    padding: 10px;
+  }
+}//Closes LI
+h6{   //HEADERS
+	padding: 10px 15px;
+	padding-top: 20px;
+	font-size: 28px;
+	background-color: #eee;
+}
+li.tooltip-element-hover .tooltip-info{left: 5px;}
+  }//close ul
+ }//CLOSE NAV
+ /*
+STYLING FOR CSS
+ */
+ .tutorial-css {
+	 font-size: 70px;
+	 ul {
+		 li {
+			 &:hover:not(.active){
+		   	background-color: #ffecc4;
+		   }
+			 &.active{
+		   	background-color: #ad701a;
+		   	border-left: 5px solid black;
+		   	border-radius: 5px 10px;
+		   }
+		 }
+	 }//Closes UL
+ }//Close CSS
+
+section.tutorial-container{
+   width: 85%;
+   display: flex;
+   flex-flow: row wrap;
+   padding: 20px 30px;
+h1.title-topic{    /*Title of the topic*/
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+	  font-size: 42px;
+	  margin:10px auto;
+    background-color: rgba(112,128,144,0.8);
+    border-bottom: 2px solid rgb(102,118,100);
+}
+h2.title-subject{    /*Title of the subject*/
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+    direction: rtl;
+    text-align: right;
+}
+h4.title-example{    /*Title of the Example Code*/
+	  width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    border-right: 3px solid red;
+    border-top: 3px solid red;
+    border-top-right-radius: 10px;
+}
+p.text-subject{    /*content of the subject*/
+    width: 100%;
+    font-size:28px;
+	  font-weight: 200;
+    margin-top: 20px;
+span.text-extra-subject{    /*Extra*/
+	color: black;
+	font-weight: 800;
+	margin:0 1px;
+ }
+}//Close Paragraph
+
+ol.list-subject, ul.list-subject{     /*Order-List of the subject*/
+    width: 100%;
+    font-size: 22px;
+    margin-right: 20px;
+
+li.list-subject-items {    /*List-items of the subject*/
+    position: relative;
+    margin-bottom: 15px;
+    list-style-type:square;
+span.items-firstWord {
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 1px black;
+  }
+ }//Close List-subject-items
+}//Close OL and UL
+
+div.image-subject{    /*Image of the subject*/
+    width: 60%;
+    margin: 10px 25px;
+    overflow: hidden;
+img.image-subject-object{
+    width: 100%;
+    filter: drop-shadow(1px 1px 2px #111);
+ }
+}//Close Image Container
+
+table.table-subject{    /*Table of the subject*/
+    font-size: 16px;
+    margin: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 70%;
+.table-subject tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table-subject tr th{
+    font-size: 32px;
+    padding: 5px 15px;
+    text-align: right;
+    background-color: #329d88;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #999;
+    border-bottom: 1px solid #777;
+}
+.table-subject tr td{
+    padding: 10px 15px;
+    background-color: #ecf0f3;
+ }
+}//Close Table
+
+div.codeContainer {
+    overflow:hidden;
+    margin:20px 0;
+    padding:5px 0 15px;
+    background-color: #b6c9d8;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #dbdbdb;
+    border-top:6px solid #7ca1ff;
+    text-align: left;
+h4.title-example-code{
+    display: block;
+    font-size: 24px;
+    width: 50%;
+    font-weight: 800;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    font-family: courier new;
+    text-align: right;
+}
+.codeBlock {
+    max-width: 100%;
+    display:inline-block;
+    margin:10px 20px;
+    direction: ltr;
+    border:solid 1px #ddd;
+    border-left:5px solid #589d32;
+    background:#ecf0f1;
+.code {
+    display:block;
+    white-space:wrap;
+    margin-right: 90px;
+    margin-left: 20px;
+    padding: 30px 5px;
+    font-family: font_code;
+    font-size: 22px;
+    font-weight:600;
+	  text-align:left;
+    /*Colors OF code Elements*/
+span.code-attribute:after {
+    content: '=';
+    color: black;
+    margin-right: -8px;
+}
+.code-tag {color:#2980B9 ;}
+.code-attribute {color:#43A047 ;}
+.code-value {color:#BA4A00; ;}
+.tooltipCode {
+    position:relative;
+    cursor:pointer;
+    color:#36abcb;
+    white-space:normal;
+    font-weight: 600;
+    filter: saturate(5);
+}
+   }//Close Code Span
+  }//Close CodeBlock
+div.code-description {
+      position: relative;
+      float: left;
+      margin-left: 10%;
+      padding: 25px 35px;
+      min-width: 150px;
+      max-height: 180px;
+      font-size: 22px;
+      background-color: #ecf0f1;
+      border-top-left-radius: 25px;
+.description-text{
+      color: #111;
+  }
+div.code-description:after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(#1b7253, transparent);
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 5px;
+  }
+ }//Close Code Description
+ .codeRunBtn{
+     float: right;
+     padding: 10px 20px;
+     text-decoration: none;
+     font-weight: 900;
+     font-size: 22px;
+     background-color: #dd3715;
+     color: #fff;
+     border-radius: 5px;
+     box-shadow: 0px 0px 5px #dddccc;
+     text-decoration: none;
+     cursor: pointer;
+     margin: 10px;
+ &:hover{
+
+ }
+ &:active{
+     transform: translateY(2px);
+ }
+ }//Close BTN
+}//Close Code Container
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    MESSAGE INFO
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+article.message-container {
+  width: 80%;
+  margin:30px auto;
+
+div.info-message-subject {
+    position: relative;
+    width:100%;
+    height: auto;
+    padding: 12px 18px;
+    background-color: #FFEB3B;
+    border-radius: 8px 8px 8px 0px;
+    box-shadow: 2px 2px 3px #616161;
+    color: #000;
+
+&.yellow{background-color: #FFEB3B;}
+&.red{background-color: #F44336;}
+&.green{background-color: #4CAF50;}
+
+span.message-icon {
+  i {
+    font-size: 52px;
+    margin: auto;
+ }
+}//Close Icon
+
+span.message-text {
+    font-size: 22px;
+}
+
+ }//Close Message
+div.message-quiz {
+    width: 40%;
+    height: auto;
+    margin-right: auto;
+    background-color: #4CAF50;
+    border-top: 3px solid #4CAF50;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 2px 2px 3px #616161;
+    padding: 10px 20px;
+    ul {
+      margin: 10px;
+      li {
+          font-size: 22px;
+          list-style: none;
+          cursor: pointer;
+       }
+    }//Close UL
+}//Close Mesage Quizz
+
+}//Close Message Container
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Next and Previous button
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+article.subject-footer {
+  display: flex;
+    width: 100%;
+    display: block;
+div.btn-container-next-prev {
+    position: relative;
+    border-top: 2px solid black;
+    margin-top: 10%;
+    width: 100%;
+}
+div.btn-container-next-prev > a{
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 900;
+}
+div.btn-container-next-prev > a:hover {
+    background-color: #ddd;
+    color: black;
+}
+a.btn-next {
+    background-color: #4CAF50;
+    color: white;
+}
+a.btn-prev {
+    background-color: #f1f1f1;
+    color: black;
+}
+div.btn-container-next-prev a#btn-next {
+    right: 10px;
+}
+div.btn-container-next-prev a#btn-prev {
+    left: 10px;
+ }
+}//Close Subject Footer
+
+span.subject-steps {
+	padding: 10px 18px;
+	margin:10px;
+	font-size:32px;
+	color:#DC7633;
+	background:#229954;
+	border-radius:50%;
+	border:0.8px solid #ECF0F1;
+}
+
+ }//Close tutorial Container
+}//Close Main Section
+
+
+@media screen and (max-width: 1024px) {
+    nav.nav-courses-intro-topics {
+        transition: width 1s;
+        width: 0%;
+    }
+    .mainContainer {
+        transition: width 1s;
+        width: 90%;
+    }
+}

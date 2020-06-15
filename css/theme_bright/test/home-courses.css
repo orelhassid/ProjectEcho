@@ -1,0 +1,390 @@
+/*$$$$$$$$$$$$$$$$$$$$
+    List Courses Page
+$$$$$$$$$$$$$$$$$$$$$$$*/
+div.main-flex-boxs {
+    display: flex;
+}
+main.courses-box-container{
+    width: 90%;
+    height: auto;
+    padding:15px 7px;
+    background-color: #eeeeee;
+}
+div.frame-container {
+    position: relative;
+    padding-right: 300px;
+    width: 100%;
+    height:500px;
+    background-image:url('../../sourceimages/wallpapers/wall_texture2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+div.frame-container-computers{
+    background-image:url('../../sourceimages/wallpapers/wall_09.jpg');
+}
+article.courses-frame {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 400px;
+    -webkit-perspective: 700px;
+    z-index: 2;
+}
+article.courses-frame div.frame-left, div.frame-right {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-image:url('../../sourceimages/decoration/window-frame3.png');
+    background-position: top left;
+    background-size: 100% 100%;
+    box-shadow: -6px 0px 2px #CCD1D1, -8px 0px 4px #212F3D;
+    transform-origin: left center;
+    transform:rotateY(0deg);
+    z-index: 4;
+    transition: 2s cubic-bezier(0, 0.81, 1, 0.5);
+}
+article.courses-frame div.frame-right {
+    position: absolute;
+    right: 0;
+    background-position: top right;
+    box-shadow: 6px 0px 2px #CCD1D1, 8px 0px 4px #212F3D;
+    transform-origin: right center;
+    transform:rotateY(0deg);
+}
+.open-window-left {
+    transform:rotateY(-180deg) !important;
+}
+.open-window-right {
+    transform:rotateY(180deg) !important;
+}
+/*article.courses-frame div.frame-left:hover, div.frame-right:hover {
+    transform:rotateY(45deg);
+}
+article.courses-frame div.frame-right:hover {
+    transform:rotateY(-45deg);
+}*/
+article.courses-frame div.frame-front {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    height: 100%;
+    width: 100%;
+    border:2px solid #212134;
+    background-image: url('../../sourceimages/wallpapers/window_night.png');
+    background-size: cover;
+    background-position: center;
+    transform-origin: top;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.shelf {
+        position: relative;
+        display: block;
+        width: 30%;
+        height: 20px;
+        margin: 100px auto 0;
+        box-shadow: 0 2px 2px #596c7c, 0 4px 0 #596c7c, 0 20px 30px -8px #000000;
+}
+
+.bookend_left {
+        display: block;
+        position: absolute;
+        left: -25px;
+        top: -18px;
+        width: 36px;
+        height: 36px;
+        background-color: #ffffff;
+        transform: rotate(35deg);
+}
+
+.bookend_left:before {
+        position: absolute;
+        top: 31px;
+        left: 17px;
+        width: 20px;
+        height: 10px;
+        background-color: #ffffff;
+        content:"";
+        transform:rotate(-35deg);
+}
+
+.bookend_right {
+        display: block;
+        position: absolute;
+        right: -25px;
+        top: -18px;
+        width: 36px;
+        height: 36px;
+        background-color: #ffffff;
+        transform:rotate(-35deg);
+}
+
+.bookend_right:before {
+        position: absolute;
+        top: 31px;
+        right: 17px;
+        width: 20px;
+        height: 10px;
+        background-color: #ffffff;
+        content:"";
+        transform: rotate(35deg);
+}
+
+.shelf .reflection {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 1px;
+        width: 99.8%;
+        height: 1px;
+}
+div.books-shelf, div.flowers-shelf, div.character-read, div.speech-bubble {
+    position: absolute;
+    width: 25%;
+}
+div.books-shelf img, div.flowers-shelf img, div.character-read img{
+    width: 100%;
+    filter:drop-shadow(1px -1px 1px #999);
+}
+div.books-shelf {
+    top: 50px;
+    right: 70px;
+}
+div.flowers-shelf {
+    right: 65%;
+    top: 75.6%;
+    width: 90px;
+    z-index: 3;
+}
+div.character-read {
+    bottom: 0px;
+    right: 50px;
+    width: 240px;
+}
+div.speech-bubble {
+    width: 250px;
+    height: 250px;
+    right: 250px;
+    bottom: 25px;
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/decoration/speech_bubble.png');
+    background-size:100% 100%;
+    transform: scale(0.2);
+    transition: 0.4s cubic-bezier(0.25, 0.1, 0.26, 1.44);
+}
+div.speech-bubble p {
+    font-size: 32px;
+    width: 100%;
+    height: 100%;
+    padding: 55px 42px 0px 10px;
+}
+div.weather-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30%;
+}
+div.frame-front img.window-gif {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    transition: 3s;
+    animation: birdsAnim 4s ease-in infinite;
+    z-index: 1;
+}
+@keyframes birdsAnim {
+    from {transform:translateX(110%)}
+    to {transform:translateX(-160%)}
+}
+main.courses-box-container h1.course-heading{
+	font-size: 32px;
+	margin-left: 55px;
+	margin-top: 25px;
+    padding: 15px 20px;
+	color: #111;
+	letter-spacing: 10px;
+    font-weight: 900;
+    border-right: 6px solid pink;
+    font-family: font_hebrew;
+}
+main.courses-box-container > hr{
+	width: 40%;
+	text-align: left;
+	border:2px solid lightblue;
+}
+/*$$$$$$$$$$$$$$$$$$$$$
+    Backgrounds
+$$$$$$$$$$$$$$$$$$$$$$*/
+div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 98.5%;
+    height: 100%;
+    background-size: contain;
+    background-position: left top;
+    filter: sepia(20%);
+    box-shadow: inset 2px 2px 5px #eeeeee;
+    border-radius: 5px 1px 1px 5px;
+    border-right: 60px solid rgba(50,64,64,0.5);
+    z-index: -4;
+}
+
+div.programmingBG {
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/wallpapers/programming_wall.png')
+}
+div.computersBG {
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/wallpapers/network_wall.png')
+}
+div.graphicBG {
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/wallpapers/art_wall.png')
+}
+div.animationBG {
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/wallpapers/animation_wall.png')
+}
+div.otherBG {
+    background-image: url('http://localhost:8080/PROJECT-ECHO/resources/sourceimages/wallpapers/dance_wall.png')
+}
+/*$$$$$$$$$$$$$$$$
+    Flex Elements - Courses Package
+$$$$$$$$$$$$$$$$$$*/
+article.flex-boxs-courses{ /*The Flex Box*/
+    position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	margin:2px 5px 30px 0px;
+	width: 100%;
+	height: auto;
+	padding-right: 0px;
+    z-index: 1;
+}
+article.flex-boxs-courses div.boxs{ /*The Flex Items*/
+	position: relative;
+	width: 380px;
+	height: 260px;
+	margin:20px 78px;
+	border-radius: 5px;
+	border:none;
+	background-color: #fefefe;
+  font-family: font_hebrew;
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+  opacity: 0;
+  transform: translateX(0px) rotateY(95deg);
+  transition: transform 0.5s ease-out, opacity 0.8s;
+}
+div.boxs header.box-course-header {
+    background-color: rgba(150,254,200,0.2);
+    border-bottom: 3px solid orange;
+    padding:10px 15px;
+}
+div.boxs img.box-course-logo{ /*Image Logo*/
+    display: inline-block;
+	width:65px;
+	height: 65px;
+    margin-left: 15px;
+}
+div.boxs h2.box-course-title{ /*The title*/
+	display: inline-block;
+	padding-top: 10px;
+    font-size: 36px;
+    font-family: font_english;
+}
+div.boxs p.box-course-info{ /*The Discription*/
+	line-height: 30px;
+	margin:15px;
+	font-size: 22px;
+	font-family: font_hebrew, font_pangolin;
+	font-weight: 900;
+}
+div.boxs div.box-course-3d { /*The 3D Box*/
+    position: absolute;
+    left: -80px;
+    height: inherit;
+    width: 80px;
+    background-color: #E74C3C;
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+    inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+    transform: rotateY(90deg);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+div.boxModel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin:0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: rgba(20,20,30,0.5);
+	transition: opacity 0.2s ease-out;
+}
+div.boxModel button.modelButton{
+	display: inline-block;
+    width: 150px;
+    height: 40px;
+	  position: absolute;
+	  left: 5px;
+	  bottom: 5px;
+    border-radius: 4px;
+    background-color: #228B22;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    font-family: font_pangolin;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button.modelButton {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.modelButton:after {
+  content: '\00bb';
+  opacity: 0;
+  margin-right: 0px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+button.modelButton:hover:after {
+  content: '\00bb \00bb \00bb';
+  opacity: 1;
+  margin-right: 10px;
+  font-size: 28px;
+  transition: 0.5s;
+}
+article.flex-boxs-courses div.boxs:hover .boxModel{
+	background-color: rgba(20,20,30,0.5);
+	opacity: 1;
+    right: 0;
+}
+article.flex-boxs-courses div.boxs:hover div.box-course-3d {
+    transform: rotateY(2deg);
+    animation: colorful 2s linear 0s infinite alternate;
+    border-right: 2px solid #5b1811;
+}
+article.flex-boxs-courses div.boxs:hover {
+    transform: translateX(50px) rotateY(0deg);
+    border-left: 2px solid #5b1811;
+}
+@keyframes colorful {
+    0% {background: #E74C3C}
+    25% {background: #9B59B6}
+    50% {background: #2980B9}
+    75% {background: #1ABC9C}
+    100% {background: #16A085}
+}
+canvas#canvas {
+    position: absolute;
+    top: 20px;
+    right: 478px;
+    background: rgba(200,200,240,0.4);
+}

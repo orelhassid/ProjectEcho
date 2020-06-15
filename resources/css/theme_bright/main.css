@@ -1,0 +1,1265 @@
+/*@import 'default.compact.css';*/
+/* line 2, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 3, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+html {
+  zoom: 80%;
+  direction: rtl;
+}
+
+/* line 4, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  direction: rtl;
+  font-family: font_hebrew, font_pangolin;
+  font-size: 12px;
+}
+
+/* line 12, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.display-none {
+  display: none;
+}
+
+/*
+Colors Material
+*/
+/*##############
+border Style
+################*/
+/*##############
+Padding And Margin Material
+################*/
+/*##############
+Shadow Material
+################*/
+/*##############
+Transitions Material
+################*/
+@font-face {
+  font-family: font_english;
+  src: url("../../extensions/fonts/font_english/Digitalt.otf");
+}
+
+@font-face {
+  font-family: font_hebrew;
+  src: url("../../extensions/fonts/font_hebrew/YehudaCLM-bold.ttf");
+}
+
+@font-face {
+  font-family: font_code;
+  src: url("../../extensions/fonts/font_code/CODE_Light.ttf");
+}
+
+@font-face {
+  font-family: font_pangolin;
+  src: url("../../extensions/fonts/font_pangolin/Pangolin-Regular.ttf");
+}
+
+/* line 72, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 73, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+ul {
+  width: 100%;
+}
+
+/* line 74, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 75, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.emoji-img {
+  width: 50px;
+}
+
+/* line 78, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.background-element, .coursesBG, div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG, div.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -4;
+}
+
+/* line 89, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.red {
+  color: #E74C3C;
+}
+
+/* line 90, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.green {
+  color: #43A047;
+}
+
+/* line 91, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.blue {
+  color: #2980B9;
+}
+
+/* line 92, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.yellow {
+  color: #F4D03F;
+}
+
+/* line 93, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.orange {
+  color: #BA4A00;
+}
+
+/* line 94, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.purple {
+  color: #9B59B6;
+}
+
+/* line 95, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.darkBlue {
+  color: #34495E;
+}
+
+/*################
+SCROLL BAR STYLE
+##################*/
+/* line 99, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+body::-webkit-scrollbar-track, textarea::-webkit-scrollbar-track, div::-webkit-scrollbar-track, .profile-editor-container form::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+/* line 105, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+body::-webkit-scrollbar, textarea::-webkit-scrollbar, div::-webkit-scrollbar, .profile-editor-container form::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+/* line 111, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+body::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb, .profile-editor-container form::-webkit-scrollbar-thumb {
+  background-color: #0ae;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent));
+}
+
+/*###########################################
+           Animation Keyframes
+###########################################*/
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+  }
+  45% {
+    transform: rotateX(-45deg);
+  }
+  65% {
+    transform: rotateX(10deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes birdsAnim {
+  from {
+    transform: translateX(110%);
+  }
+  to {
+    transform: translateX(-160%);
+  }
+}
+
+@keyframes colorful {
+  0% {
+    background: #E74C3C;
+  }
+  25% {
+    background: #9B59B6;
+  }
+  50% {
+    background: #2980B9;
+  }
+  75% {
+    background: #1ABC9C;
+  }
+  100% {
+    background: #16A085;
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0) rotateY(180deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*########################
+    WIDGETS CONTAINER
+########################*/
+/* line 4, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container {
+  /*Container and the Father of all widgets!*/
+  width: 85px;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  left: 0px;
+  top: 10%;
+  z-index: 4;
+}
+
+/* line 13, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container * {
+  transition: 0.5s cubic-bezier(0.12, 0.68, 0.37, 0.84);
+}
+
+/* line 16, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container div.widget-account, article.widgets-container div.widget-follow {
+  position: relative;
+  max-width: 250px;
+  max-height: 70px;
+  background-color: tomato;
+  border-radius: 5px 40px 40px 5px;
+  margin-bottom: 50px;
+}
+
+/*Close Widgets Container*/
+/* line 28, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container {
+  /*The Account login System container*/
+  display: block;
+  /*Hide the Account widget*/
+  position: relative;
+  height: 250px;
+  padding: 0px;
+  z-index: 5;
+}
+
+/* line 35, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account, article.widgets-container div.widget-follow {
+  /*The "finger" that slide out*/
+  width: 250px;
+  height: 70px;
+  margin-bottom: 0%;
+}
+
+/* line 40, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account div.account-hole, article.widgets-container div.widget-follow div.account-hole {
+  /*White hole - account widget*/
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ff7858;
+  background-color: #ffffff;
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account img.lockimg, article.widgets-container div.widget-follow img.lockimg {
+  /*Lock icon - account widget*/
+  position: absolute;
+  top: 20px;
+  right: -45px;
+  width: 90px;
+  height: 90px;
+  transform: rotateZ(-45deg);
+  z-index: 3;
+}
+
+/* line 59, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container form.account-form {
+  transform: rotateX(90deg);
+  width: 250px;
+  padding: 15px;
+  padding-left: 15px;
+  transform-origin: top;
+  background-color: rgba(50, 80, 150, 0.5);
+}
+
+/* line 68, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form input {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 60%;
+  box-shadow: none;
+}
+
+/* line 76, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form button {
+  width: 150px;
+  padding: 10px 5px;
+  background-color: white;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  border: 2px solid orange;
+  transition: 0.7s;
+}
+
+/* line 86, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form button:hover {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border: 3px solid orange;
+}
+
+/* line 92, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container:hover {
+  transform: translateX(150px);
+}
+
+/* line 95, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container:hover form.account-form {
+  animation: flip 2s ease-in;
+  transform: rotateX(0deg);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Profile Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 103, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container div.dropdown {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 19px;
+  font-family: font_hebrew;
+}
+
+/* line 115, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+button.profileName {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  width: 120px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(64, 111, 198, 0.2);
+  border: 1px solid #333f51;
+}
+
+/* line 125, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.caret {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+
+/* line 130, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-menu {
+  min-width: 180px;
+  left: 8px;
+  text-align: left;
+  padding: 0;
+}
+
+/* line 136, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-header {
+  text-align: right;
+}
+
+/* line 139, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* line 146, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-header {
+  font-size: 18px;
+}
+
+/* line 149, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li a i {
+  font-size: 38px;
+}
+
+/* line 152, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li a i:hover {
+  filter: drop-shadow(1px 1px 1px lightblue -1px -1px 1px lightblue);
+}
+
+/* line 155, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.profileContainer:hover {
+  transform: translateX(50px);
+}
+
+/* line 160, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.dropdown button.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background: url("../../sourceimages/profile/avatars/graphic_guy_01.png");
+  background-size: contain;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* line 169, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.dropdown button.profile-avatar:hover {
+  border: 2.2px solid lightblue;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Follow Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*Social networking for following*/
+/* line 177, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook, div.follow-youtube {
+  position: absolute;
+  left: -100px;
+  height: 50px;
+  width: 150px;
+  height: 50px;
+}
+
+/* line 184, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook {
+  background-color: steelblue;
+  /*Blue background*/
+  bottom: 20px;
+}
+
+/* line 188, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-youtube {
+  background-color: maroon;
+  /*red background*/
+  bottom: -40px;
+}
+
+/* line 193, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook div.hole {
+  background: url("../../sourceimages/icons/facebook2.png");
+}
+
+/* line 196, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-youtube div.hole {
+  background: url("../../sourceimages/icons/youtube2.png");
+}
+
+/* line 198, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-follow div.hole {
+  height: 40px;
+  width: 40px;
+  margin: 5px 5px;
+  border-radius: 50%;
+  border: 2px solid steelblue;
+  background-position: center;
+  background-size: contain;
+}
+
+/* line 207, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-follow:hover {
+  transform: translateX(60%);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Other Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 214, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-up {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 150px;
+  left: 0;
+}
+
+/* line 221, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-up i {
+  font-size: 52px;
+  color: tomato;
+}
+
+/*@media screen and (max-width: 780px) {
+  main.mainContainer {
+    width: 100%;
+  }
+    h1.logo {
+	font-size:58px;
+}
+    h1.logo i{
+    font-size: 31px;
+}
+    nav.main-nav {
+    font-weight: 900;
+}
+    nav.main-nav ul.nav-bar-items-bottom li{
+    display: inline;
+    margin-right: 25px;
+    font-size: 22px;
+}
+    li.bar-items {
+	margin-right:32px;
+	font-size:22px;
+	font-family:font_english;
+}
+    li.singup, li.login {
+    font-size: 30px;
+    padding: 1px 6px;
+}
+}*/
+@media screen and (min-width: 580px) {
+  /* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/responsive.scss */
+  div.WRAPPER main.MainFlexBox aside.asideContainer {
+    width: 50%;
+  }
+  /* line 37, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/responsive.scss */
+  div.WRAPPER .div.wrapper-form {
+    flex-grow: 1;
+  }
+}
+
+/* line 1, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container {
+  position: relative;
+  padding-right: 300px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../sourceimages/wallpapers/wall_texture2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  /*Close Window Container*/
+}
+
+/* line 10, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  height: 400px;
+  -webkit-perspective: 700px;
+  z-index: 2;
+  /*Close Frame Front*/
+}
+
+/* line 17, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-left, div.frame-container article.window div.frame-right {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url("../../sourceimages/decoration/window-frame3.png");
+  background-position: top left;
+  background-size: 100% 100%;
+  box-shadow: -6px 0px 2px #CCD1D1, -8px 0px 4px #212F3D;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  z-index: 4;
+  transition: 1s ease-in;
+}
+
+/* line 31, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-right {
+  right: 0;
+  background-position: top right;
+  box-shadow: 6px 0px 2px #CCD1D1, 8px 0px 4px #212F3D;
+  transform-origin: right center;
+  transform: rotateY(0deg);
+}
+
+/* line 39, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-front {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  height: 100%;
+  width: 100%;
+  border: 2px solid #212134;
+  background-image: url("../../sourceimages/wallpapers/window_night.png");
+  background-size: cover;
+  background-position: center;
+  transform-origin: top;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+/* line 52, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-front img.window-gif {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  animation: birdsAnim 4s ease-in infinite;
+  z-index: 1;
+}
+
+/* line 60, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window .open-window-left {
+  transform: rotateY(-180deg) !important;
+}
+
+/* line 63, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window .open-window-right {
+  transform: rotateY(180deg) !important;
+}
+
+/* line 68, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf,
+div.frame-container div.flowers-shelf,
+div.frame-container div.character-read,
+div.frame-container div.speech-bubble {
+  position: absolute;
+  width: 25%;
+}
+
+/* line 75, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf img, div.frame-container div.flowers-shelf img, div.frame-container div.character-read img {
+  width: 100%;
+  filter: drop-shadow(1px -1px 1px #999);
+}
+
+/* line 79, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf {
+  top: 50px;
+  right: 70px;
+}
+
+/* line 83, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.flowers-shelf {
+  right: 65%;
+  top: 75.6%;
+  width: 90px;
+  z-index: 3;
+}
+
+/* line 89, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.character-read {
+  bottom: 0px;
+  right: 50px;
+  width: 240px;
+}
+
+/* line 94, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.speech-bubble {
+  width: 250px;
+  height: 250px;
+  right: 250px;
+  bottom: 25px;
+  background-image: url("../../sourceimages/decoration/speech_bubble.png");
+  background-size: 100% 100%;
+  transform: scale(0.2);
+  transition: 0.4s cubic-bezier(0.25, 0.1, 0.26, 1.44);
+}
+
+/* line 104, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.speech-bubble p {
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  padding: 55px 42px 0px 10px;
+}
+
+/*Close Frame Container*/
+/* line 112, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+span.course-heading {
+  display: block;
+  font-size: 32px;
+  margin-left: 55px;
+  margin-top: 25px;
+  padding: 15px 20px;
+  color: #111;
+  letter-spacing: 10px;
+  font-weight: 900;
+  border-right: 6px solid pink;
+  font-family: font_hebrew;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$
+    Backgrounds
+$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 127, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+.coursesBG, div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG {
+  filter: sepia(20%);
+  box-shadow: inset 2px 2px 5px #eeeeee;
+  border-radius: 5px 1px 1px 5px;
+  border-right: 60px solid rgba(50, 64, 64, 0.5);
+  z-index: -4;
+}
+
+/* line 136, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.programmingBG {
+  background-image: url("../../sourceimages/wallpapers/programming_wall.png");
+}
+
+/* line 140, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.computersBG {
+  background-image: url("../../sourceimages/wallpapers/network_wall.png");
+}
+
+/* line 144, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.graphicBG {
+  background-image: url("../../sourceimages/wallpapers/art_wall.png");
+}
+
+/* line 148, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.animationBG {
+  background-image: url("../../sourceimages/wallpapers/animation_wall.png");
+}
+
+/* line 152, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.otherBG {
+  background-image: url("../../sourceimages/wallpapers/dance_wall.png");
+}
+
+/*$$$$$$$$$$$$$$$$
+    Flex Elements - Courses Package
+$$$$$$$$$$$$$$$$$$*/
+/* line 159, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses {
+  /*The Flex Box*/
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2px 5px 30px 0px;
+  width: 100%;
+  height: auto;
+  padding-right: 0px;
+  z-index: 1;
+  /*Close Box*/
+}
+
+/* line 168, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs {
+  /*The Flex Items*/
+  position: relative;
+  width: 380px;
+  height: 260px;
+  margin: 20px 78px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fefefe;
+  font-family: font_hebrew;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px white;
+  /*top internal highlight*/
+  opacity: 0;
+  transform: translateX(0px) rotateY(95deg);
+  transition: transform 0.5s ease-out, opacity 0.8s;
+  /*Close Modal*/
+}
+
+/* line 182, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs header.box-course-header {
+  background-color: rgba(150, 254, 200, 0.2);
+  border-bottom: 3px solid orange;
+  padding: 10px 15px;
+}
+
+/* line 187, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs img.box-course-logo {
+  /*Image Logo*/
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin-left: 15px;
+}
+
+/* line 193, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs h2.box-course-title {
+  /*The title*/
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 36px;
+  font-family: font_english;
+}
+
+/* line 199, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs p.box-course-info {
+  /*The Discription*/
+  line-height: 30px;
+  margin: 15px;
+  font-size: 22px;
+  font-family: font_hebrew, font_pangolin;
+  font-weight: 900;
+}
+
+/* line 206, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.box-course-3d {
+  /*The 3D Box*/
+  position: absolute;
+  left: -80px;
+  height: inherit;
+  width: 80px;
+  background-color: #E74C3C;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px white;
+  /*top internal highlight*/
+  transform: rotateY(90deg);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+/* line 218, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(20, 20, 30, 0.5);
+  transition: opacity 0.2s ease-out;
+}
+
+/* line 229, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 4px;
+  background-color: #228B22;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  font-family: font_pangolin;
+  cursor: pointer;
+  transition: 2.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* line 247, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton:after {
+  content: '\00bb';
+  opacity: 0;
+  margin-right: 0px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+/* line 254, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton:hover:after {
+  content: '\00bb \00bb \00bb';
+  opacity: 1;
+  margin-right: 10px;
+  font-size: 28px;
+  transition: 0.5s;
+}
+
+/* line 263, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover .boxModel {
+  background-color: rgba(20, 20, 30, 0.5);
+  opacity: 1;
+  right: 0;
+}
+
+/* line 268, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover div.box-course-3d {
+  transform: rotateY(2deg);
+  animation: colorful 2s linear 0s infinite alternate;
+  border-right: 2px solid #5b1811;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover {
+  transform: translateX(50px) rotateY(0deg);
+  border-left: 2px solid #5b1811;
+}
+
+/*Close FlexBox Coursess*/
+/* line 279, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container-computers {
+  background-image: url("../../sourceimages/wallpapers/wall_09.jpg");
+}
+
+/* line 282, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+.background-element, .coursesBG, div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG, div.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -4;
+}
+
+/* line 1, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+article.mainModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5;
+}
+
+/* line 14, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 24, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+img.modalimg {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  border: #ccc;
+  transition: all 2s;
+}
+
+/* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+img.modalimg, span.closeModal {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* line 37, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+div.modalcontent {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+  font-size: 32px;
+  color: #eee;
+  padding: 20px;
+  border-top: 2px solid red;
+}
+
+/* line 48, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal:hover {
+  color: palevioletred;
+}
+
+/* line 51, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal:active {
+  color: darkred;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0) rotateY(180deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+/* line 148, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.alert-box {
+  width: 500px;
+  display: table;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #ca3c3c;
+  background-color: rgba(190, 10, 20, 0.9);
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-left: 10px solid #D32F2F;
+  box-shadow: 2px 2px 5px #123123;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+/* line 165, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+.alert-box > * {
+  margin: 15px;
+}
+
+/*###################
+    MAIN HEADER
+####################*/
+/* line 172, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER {
+  display: flex;
+  flex-flow: row wrap;
+  /*##############################
+    MAIN FLEX-BOX : aside, main, footer
+##############################*/
+  /*Close Footer - Container*/
+}
+
+/* line 175, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER > * {
+  width: 100%;
+}
+
+/* line 178, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader {
+  width: 100%;
+  height: auto;
+  background: rgba(41, 128, 185, 0.7);
+  background-image: url("../../sourceimages/wallpapers/colors_02.png");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  filter: saturate(100%);
+}
+
+/* line 187, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 192, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav .logo-container {
+  display: inline-block;
+  width: 20%;
+  height: 40%;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  align-self: flex-start;
+  border-left: 3px solid black;
+  align-self: flex-start;
+  order: 1;
+}
+
+/* line 203, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav .logo-container span {
+  font-size: 62px;
+  margin: 0;
+}
+
+/* line 208, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom {
+  padding: 3px 7px;
+  height: 25%;
+  margin: auto 0;
+  order: 2;
+}
+
+/* line 213, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top li.bar-items, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom li.bar-items {
+  /*bar items top child*/
+  display: inline;
+  margin-right: 40px;
+  font-size: 28px;
+  font-family: font_hebrew;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s cubic-bezier(0.12, 0.68, 0.37, 0.84);
+}
+
+/* line 223, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top li.singup-nav, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom li.singup-nav, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top li.login-nav, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom li.login-nav {
+  /*bar items top child*/
+  font-size: 36px;
+  padding: 4px 20px;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 1px 1px 10px #ccc;
+  margin-top: 5px;
+}
+
+/* line 231, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top li.login-nav, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom li.login-nav {
+  background-color: #4CAF50;
+}
+
+/* line 235, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-top input.searchBox-input, div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom input.searchBox-input {
+  width: 200px;
+  padding: 10px 15px 10px 33px;
+  background-color: #fed;
+  font: 22px font_hebrew, font_english;
+  background-image: url("../../sourceimages/icons/search-icon.png");
+  background-position: 2%;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: 1.5s cubic-bezier(0.42, 0, 1, 1);
+}
+
+/* line 250, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom {
+  order: 3;
+}
+
+/* line 254, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav ul.nav-bar-items-bottom li {
+  display: inline;
+  margin-right: 25px;
+  font-size: 22px;
+  color: #000;
+}
+
+/* line 261, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER header.mainHeader nav.main-nav li.bar-items:hover:not(.none) {
+  border-bottom: 2px solid #004c99;
+  color: #004c99;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 1000px;
+}
+
+/* line 279, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox section.mainContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0px auto;
+  padding-bottom: 30px;
+}
+
+/* line 288, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer {
+  height: 100%;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* line 293, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer span.aside-title {
+  display: block;
+  width: 100%;
+  font-size: 28px;
+}
+
+/* line 298, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer .aside-flexBox {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* line 301, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer .aside-flexBox div.aside-widget {
+  cursor: pointer;
+  width: 200px;
+}
+
+/* line 304, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer .aside-flexBox div.aside-widget span.aside-title {
+  display: block;
+  font-size: 18px;
+}
+
+/* line 308, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER main.MainFlexBox aside.asideContainer .aside-flexBox div.aside-widget img {
+  width: 100%;
+}
+
+/* line 315, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer {
+  width: 100%;
+  min-height: 150px;
+  padding-bottom: 50px;
+  background: linear-gradient(#AEB6BF 10%, #eeedee 20%);
+}
+
+/* line 320, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer header {
+  width: 100%;
+  height: 50px;
+  background-color: #222222;
+  box-shadow: 0 -4px 3px #222222;
+}
+
+/* line 325, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer header ul {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+/* line 329, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer header ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 8%;
+  color: gold;
+  padding: 10px 15px;
+  font-size: 24px;
+}
+
+/* line 339, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer div.footerTable {
+  display: flex;
+}
+
+/* line 341, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer div.footerTable ul {
+  margin: 10px 50px;
+  text-align: right;
+  border-right: 6px solid lightblue;
+  width: 30%;
+}
+
+/* line 346, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer div.footerTable ul li {
+  font-size: 22px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  border-bottom: 2px solid goldenrod;
+}
+
+/* line 355, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.WRAPPER footer.footerContainer p.copyRight {
+  margin-top: 30px;
+  padding-left: 60px;
+  direction: ltr;
+  font-size: 18px;
+}
+
+/* line 367, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/main.scss */
+div.background {
+  position: fixed;
+  background-image: url("../../../sourceimages/wallpapers/wall_012.png");
+  background-size: cover;
+}

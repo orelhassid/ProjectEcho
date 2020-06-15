@@ -1,0 +1,290 @@
+/*########################
+    WIDGETS CONTAINER
+########################*/
+/* line 4, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container {
+  /*Container and the Father of all widgets!*/
+  width: 85px;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  position: fixed;
+  left: 0px;
+  top: 10%;
+  z-index: 4;
+}
+
+/* line 13, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container * {
+  transition: 0.5s cubic-bezier(0.12, 0.68, 0.37, 0.84);
+}
+
+/* line 16, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container div.widget-account, article.widgets-container div.widget-follow {
+  position: relative;
+  max-width: 250px;
+  max-height: 70px;
+  background-color: tomato;
+  border-radius: 5px 40px 40px 5px;
+  margin-bottom: 50px;
+}
+
+/*Close Widgets Container*/
+/* line 28, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container {
+  /*The Account login System container*/
+  display: block;
+  /*Hide the Account widget*/
+  position: relative;
+  height: 250px;
+  padding: 0px;
+  z-index: 5;
+}
+
+/* line 35, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account, article.widgets-container div.widget-follow {
+  /*The "finger" that slide out*/
+  width: 250px;
+  height: 70px;
+  margin-bottom: 0%;
+}
+
+/* line 40, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account div.account-hole, article.widgets-container div.widget-follow div.account-hole {
+  /*White hole - account widget*/
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ff7858;
+  background-color: #ffffff;
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account img.lockimg, article.widgets-container div.widget-follow img.lockimg {
+  /*Lock icon - account widget*/
+  position: absolute;
+  top: 20px;
+  right: -45px;
+  width: 90px;
+  height: 90px;
+  transform: rotateZ(-45deg);
+  z-index: 3;
+}
+
+/* line 59, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container form.account-form {
+  transform: rotateX(90deg);
+  width: 250px;
+  padding: 15px;
+  padding-left: 15px;
+  transform-origin: top;
+  background-color: rgba(50, 80, 150, 0.5);
+}
+
+/* line 68, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form input {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 60%;
+  box-shadow: none;
+}
+
+/* line 76, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form button {
+  width: 150px;
+  padding: 10px 5px;
+  background-color: white;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  border: 2px solid orange;
+  transition: 0.7s;
+}
+
+/* line 86, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+form.account-form button:hover {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border: 3px solid orange;
+}
+
+/* line 92, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container:hover {
+  transform: translateX(150px);
+}
+
+/* line 95, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-account-container:hover form.account-form {
+  animation: flip 2s ease-in;
+  transform: rotateX(0deg);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Profile Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 103, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+article.widgets-container div.dropdown {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 19px;
+  font-family: font_hebrew;
+}
+
+/* line 115, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+button.profileName {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  width: 120px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(64, 111, 198, 0.2);
+  border: 1px solid #333f51;
+}
+
+/* line 125, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.caret {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+
+/* line 130, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-menu {
+  min-width: 180px;
+  left: 8px;
+  text-align: left;
+  padding: 0;
+}
+
+/* line 136, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-header {
+  text-align: right;
+}
+
+/* line 139, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* line 146, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+.dropdown-header {
+  font-size: 18px;
+}
+
+/* line 149, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li a i {
+  font-size: 38px;
+}
+
+/* line 152, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+ul.widget-profile li a i:hover {
+  filter: drop-shadow(1px 1px 1px lightblue -1px -1px 1px lightblue);
+}
+
+/* line 155, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.profileContainer:hover {
+  transform: translateX(50px);
+}
+
+/* line 160, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.dropdown button.profile-avatar {
+  width: 70px;
+  height: 70px;
+  background: url("../../sourceimages/profile/avatars/graphic_guy_01.png");
+  background-size: contain;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* line 169, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.dropdown button.profile-avatar:hover {
+  border: 2.2px solid lightblue;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Follow Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*Social networking for following*/
+/* line 177, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook, div.follow-youtube {
+  position: absolute;
+  left: -100px;
+  height: 50px;
+  width: 150px;
+  height: 50px;
+}
+
+/* line 184, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook {
+  background-color: steelblue;
+  /*Blue background*/
+  bottom: 20px;
+}
+
+/* line 188, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-youtube {
+  background-color: maroon;
+  /*red background*/
+  bottom: -40px;
+}
+
+/* line 193, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-facebook div.hole {
+  background: url("../../sourceimages/icons/facebook2.png");
+}
+
+/* line 196, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.follow-youtube div.hole {
+  background: url("../../sourceimages/icons/youtube2.png");
+}
+
+/* line 198, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-follow div.hole {
+  height: 40px;
+  width: 40px;
+  margin: 5px 5px;
+  border-radius: 50%;
+  border: 2px solid steelblue;
+  background-position: center;
+  background-size: contain;
+}
+
+/* line 207, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-follow:hover {
+  transform: translateX(60%);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Other Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 214, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-up {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 150px;
+  left: 0;
+}
+
+/* line 221, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/widgets.scss */
+div.widget-up i {
+  font-size: 52px;
+  color: tomato;
+}

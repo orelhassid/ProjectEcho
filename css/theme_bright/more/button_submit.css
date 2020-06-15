@@ -1,0 +1,66 @@
+/* line 7, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"] {
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  border-radius: 10px;
+  will-change: transform;
+  transition: all .2s ease;
+  border: 2px solid #FF5126;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  color: #FF5126;
+  outline: none;
+  text-align: center;
+}
+
+/* line 25, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"]:hover {
+  background: #FF5126;
+  color: #ffffff;
+}
+
+/* line 29, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"]:active {
+  font-size: 15px;
+  transform: translateY(1px);
+}
+
+/* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"].active {
+  font-size: 0;
+  border-radius: 25px;
+  width: 50px;
+  background: transparent;
+}
+
+/* line 39, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"].loader {
+  border-right: 2px solid #ffffff;
+  animation: loader .4s linear infinite;
+}
+
+/* line 43, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/button_submit.scss */
+button[type="submit"].success {
+  background: #3BB873;
+  border-color: #3BB873;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

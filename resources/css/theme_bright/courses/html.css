@@ -1,0 +1,550 @@
+.tooltip-info{ /*Tooltip description of all elements*/
+    visibility: hidden;
+    min-width: 100px;
+    background-color: rgba(10,10,10,0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform:capitalize;
+    font-family:sans-serif;
+    position: absolute;
+}
+.tooltip-element-hover:hover .tooltip-info{ /*Event Hover on all tooltip elements*/
+    visibility: visible;
+}
+.tooltip {    /*Default values for tooltip Bootstrap*/
+    font-size: 18px;
+    padding: 2px 6px;
+}
+
+
+/****************
+Intro Setting
+****************/
+body{
+	direction: rtl;
+    font-family: font_hebrew, font_pangolin;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+
+}
+
+div.wrapper-courses-intro{
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/**************************
+Navigation Topics - Intro Courses
+***************************/
+nav.nav-courses-intro-topics{
+	order:1;
+	width: 15%;
+	height: auto;
+	background-color: #ddd;
+    resize: both;
+}
+nav.nav-courses-intro-topics ul{
+	padding: 5px;
+	height: 1600px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+nav.nav-courses-intro-topics ul li{
+    position: relative;
+    display: block;
+	padding: 10px 15px;
+	font-size: 22px;
+    font-weight: 900;
+	background-color: #eee;
+}
+nav.nav-courses-intro-topics ul h6{/*HEADERS*/
+	padding: 10px 15px;
+	padding-top: 20px;
+	font-size: 28px;
+	background-color: #eee;
+}
+li.tooltip-element-hover .tooltip-info{left: 5px;}
+nav.nav-courses-intro-topics ul li.active{
+	background-color: #1bad9b;
+	border-left: 5px solid black;
+	border-radius: 5px 10px;
+}
+nav.nav-courses-intro-topics ul li:hover:not(.active){
+	background-color: #c4fff7;
+}
+/*Style Scroll Bar - Intro Topics*/
+nav.nav-courses-intro-topics ul::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+nav.nav-courses-intro-topics ul::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;;
+}
+
+nav.nav-courses-intro-topics ul::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+
+}
+/**************************
+Main Contents of the topic
+***************************/
+main.main-courses-intro{ /*Main Container*/
+	order:2;
+    position: relative;
+    margin: 0;
+    padding: 10px 20px 80px 40px;
+	width: 75%;
+	min-height: 500px;
+    box-sizing: border-box;
+	border-radius: 0px 0px 5px 5px;
+	background-color:#7abcb4;
+    overflow-y: auto;
+}
+main.main-courses-intro > h1.title-topic{    /*Title of the topic*/
+	text-align: center;
+    padding: 15px;
+	font-size: 32px;
+	margin:10px auto;
+    background-color: rgba(112,128,144,0.8);
+    border-bottom: 2px solid rgb(102,118,100);
+}
+main.main-courses-intro > h2.title-subject{    /*Title of the subject*/
+	font-size: 32px;
+    font-weight: 900;
+    margin-top: 50px;
+    direction: rtl;
+    text-align: right;
+}
+main.main-courses-intro h4.title-example{    /*Title of the Example Code*/
+	width: 50%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    border-right: 3px solid red;
+    border-top: 3px solid red;
+    border-top-right-radius: 10px;
+}
+main.main-courses-intro p.text-subject{    /*content of the subject*/
+	font-size:22px;
+	font-weight: 200;
+    margin-top: 20px;
+}
+main.main-courses-intro p span.text-extra-subject{    /*Extra*/
+	color: black;
+	font-weight: 800;
+	margin:0 1px;
+}
+main.main-courses-intro ol.list-subject, ul.list-subject{     /*Order-List of the subject*/
+    font-size: 22px;
+    margin-right: 20px;
+}
+ol.courses-intro-list li.list-subject-items,
+ul.list-subject li.list-subject-items{    /*List-items of the subject*/
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 2px solid lightblue;
+    list-style-type:square;
+}
+li.list-subject-items span.items-firstWord {
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 1px black;
+}
+li.courses-intro-list-items span.element-hover-tooltip{    /*Element Hover of the subject*/
+    cursor: pointer;
+}
+li.courses-intro-list-items span.tooltip-info{    /*Element Hover info of the subject*/
+    right: 200px;
+    max-width: 200px;
+    font-size: 18px;
+}
+main.main-courses-intro div.image-subject{    /*Image of the subject*/
+    min-height: 400px;
+    width: 80%;
+    margin: auto;
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+div.image-subject img.image-subject-object{
+    width: 100%;
+    filter: drop-shadow(1px 1px 2px #111);
+}
+table.table-subject{    /*Table of the subject*/
+    font-size: 16px;
+    margin: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 70%;
+}
+.table-subject tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table-subject tr th{
+    font-size: 32px;
+    padding: 5px 15px;
+    text-align: right;
+    background-color: #329d88;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #999;
+    border-bottom: 1px solid #777;
+
+}
+.table-subject tr td{
+    padding: 10px 15px;
+    background-color: #ecf0f3;
+}
+/*****************
+CODEBOX - STYLE
+*****************/
+.codeContainer {
+    overflow:hidden;
+    margin:20px 0;
+    padding:5px 0 15px;
+    background-color: #b6c9d8;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #dbdbdb;
+    border-top:6px solid #7ca1ff;
+    text-align: left;
+}
+h4.title-example-code{
+    display: block;
+    font-size: 24px;
+    width: 50%;
+    font-weight: 800;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    font-family: courier new;
+    text-align: right;
+}
+.codeBlock {
+    max-width: 100%;
+    display:inline-block;
+    margin:10px 20px;
+    direction: ltr;
+    border:solid 1px #ddd;
+    border-left:5px solid #589d32;
+    background:#ecf0f1;
+
+}
+.code {
+    display:block;
+    white-space:wrap;
+    margin-right: 90px;
+    margin-left: 20px;
+    padding: 30px 5px;
+    font-family: font_code;
+    font-size: 22px;
+    font-weight:600;
+	text-align:left;
+}
+span.code span.code-attribute:after {
+    content: '=';
+    color: black;
+    margin-right: -8px;
+}
+/*Colors OF code Elements*/
+span.code-tag {color:#2980B9 ;}
+span.code-attribute {color:#43A047 ;}
+span.code-value {color:#BA4A00; ;}
+
+span.tooltipCode {
+    position:relative;
+    cursor:pointer;
+    color:#36abcb;
+    white-space:normal;
+    font-weight: 600;
+    filter: saturate(5);
+}
+.codeRunBtn{
+    float: right;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 22px;
+    background-color: #dd3715;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #dddccc;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.codeRunBtn:hover{
+
+}
+.codeRunBtn:active{
+    transform: translateY(2px);
+}
+
+/*CODEBOX DESCRIPTION - STYLE*/
+div.codeContainer div.code-description {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    padding: 25px 35px;
+    min-width: 150px;
+    max-height: 180px;
+    font-size: 22px;
+    background-color: #ecf0f1;
+    border-top-left-radius: 25px;
+}
+div.code-description .description-text{
+    color: #111;
+}
+div.codeContainer div.code-description:after{
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(#1b7253, transparent);
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 5px;
+}
+span.code-extra {
+    font-weight: 800;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    MESSAGE INFO
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+article.message-container {
+    height: 300px;
+}
+div.info-message-subject {
+    position: relative;
+    width:80%;
+    height: auto;
+    padding: 12px 18px;
+    margin: 30px 10px;
+    background-color: #FFEB3B;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #616161;
+}
+div.message-yellow{background-color: #FFEB3B;}
+div.message-red{background-color: #F44336;}
+div.message-green{background-color: #4CAF50;}
+div.info-message-subject span.message-icon i {
+    font-size: 52px;
+    margin: auto;
+}
+div.info-message-subject span.message-text {
+    font-size: 22px;
+}
+div.message-quiz {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 40%;
+    height: auto;
+    background-color: #4CAF50;
+    border-radius: 1px 1px 8px 8px;
+    box-shadow: 2px 2px 3px #616161;
+    padding: 10px 20px;
+}
+div.message-quiz ul {
+    margin: 10px;
+}
+div.message-quiz ul li {
+    font-size: 22px;
+    list-style: none;
+    cursor: pointer;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Next and Previous button
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+div.btn-container-next-prev {
+    position: relative;
+    border-top: 2px solid black;
+    margin-top: 10%;
+    width: 100%;
+}
+div.btn-container-next-prev > a{
+    position: absolute;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 900;
+}
+div.btn-container-next-prev > a:hover {
+    background-color: #ddd;
+    color: black;
+}
+a.btn-next {
+    background-color: #4CAF50;
+    color: white;
+}
+a.btn-prev {
+    background-color: #f1f1f1;
+    color: black;
+}
+div.btn-container-next-prev a#btn-next {
+    right: 10px;
+}
+div.btn-container-next-prev a#btn-prev {
+    left: 10px;
+}
+mainmain.main-courses-intro hr {
+    border:1px solid #ddd;
+    margin:50px auto;
+}
+/******************
+Aside contents - Update and news
+******************/
+aside.aside-courses-intro{
+	width:10%;
+	min-height: 500px;
+	background-color: #eef;
+	margin:0;
+	order:3;
+	text-align: center;
+    font-size: 16px;
+}
+aside.aside-courses-intro h5.aside-header{
+	font-size: 32px;
+}
+aside.aside-courses-intro hr.aside-hr {
+    border:2px solid #aa0;
+    margin:15px;
+}
+aside.aside-courses-intro a.aside-link {
+    font-size: 18px;
+}
+aside.aside-courses-intro img#aside-img {
+    width:90%;
+    border:none;
+    filter: drop-shadow(0px 1px 2px #222222);
+    transition: transform 2s;
+}
+img#aside-img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Extra Elements Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+    /*$$$$$ Main Modal $$$$$$$*/
+article.mainModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    z-index: 5;
+}
+span.closeModal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+img.modalimg {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    border:#ccc;
+    transition: all 2s;
+}
+img.modalimg, span.closeModal {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+div.modalcontent {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    font-size:32px;
+    color: #eee;
+    padding: 20px;
+    border-top: 2px solid red;
+
+}
+span.closeModal:hover {
+    color: palevioletred;
+}
+span.closeModal:active {
+    color: darkred;
+}
+.red {color:#E74C3C ;}
+.green {color:#43A047 ;}
+.blue {color:#2980B9 ;}
+.yellow {color:#F4D03F ;}
+.orange {color:#BA4A00;}
+.purple {color:#9B59B6 ;}
+.darkBlue {color:#34495E ;}
+
+span.subject-steps {
+	padding: 10px 18px;
+	margin:10px;
+	font-size:32px;
+	color:#DC7633;
+	background:#229954;
+	border-radius:50%;
+	border:0.8px solid #ECF0F1;
+}
+
+@keyframes zoom {
+    from {transform:scale(0) rotateY(180deg)}
+    to {transform:scale(1) rotateY(0deg)}
+}
+
+@media screen and (max-width: 1024px) {
+    nav.nav-courses-intro-topics {
+        transition: width 1s;
+        width: 0%;
+    }
+    mainmain.main-courses-intro {
+        transition: width 1s;
+        width: 90%;
+    }
+    aside.aside-courses-intro {
+     width: 25%;
+    }
+    aside.aside-courses-intro h5{
+	font-size: 18px;
+    }
+}

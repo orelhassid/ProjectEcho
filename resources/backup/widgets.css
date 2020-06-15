@@ -1,0 +1,85 @@
+@keyframes flip{
+	0%{transform: rotateX(90deg);}
+	45%{transform: rotateX(-45deg);}
+	65%{transform: rotateX(10deg);}
+	100%{transform: rotateX(0deg);}
+}
+article#widgets-container{
+	
+}
+div#account-widget{
+	position: fixed;
+	right: -180px;
+	top: 10%;
+	width: 250px;
+	height: 70px;
+	background-color: rgb(255,99,71);
+	border-radius: 40px 5px 5px 40px;
+	z-index: 2;
+	transition: 0.4s;
+}
+div#account-widget:hover {right: 0px;}
+div#account-widget:hover div#form 
+{
+	animation: flip 3s ease-out;
+	transform: rotateX(0deg);
+}
+div#account-widget img{
+	position: absolute;
+	top: 20px;
+	left: -45px;
+	width: 90px;
+	height: 90px;
+	transform:rotateZ(45deg);
+	z-index: 3;
+}
+div#hole{
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border:2px solid rgb(255,120,88);;
+	background-color: #ffffff;
+}
+div#account-widget div#form{
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	width: 80%;
+	height: 200px;
+	padding:15px;
+	padding-right: 15px;
+	background-color:rgba(210,105,30, 0.2);
+	box-shadow: -1px 5px 3px #ccc;
+	transform-origin: top;
+	transform: rotateX(90deg);
+	transition: 2s;
+}
+div#form form{
+	width: 100px;
+}
+div#form form input{
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-shadow: none;
+}
+div#form form button{
+	width: 150px;
+	padding:10px 5px;
+	background-color:white;
+	font-size:18px;
+	color:black;
+	cursor: pointer;
+	border:2px solid orange;
+	transition: 0.7s;
+}
+div#form form button:hover{
+	background-color: orange;
+	color:white;
+	font-size: 20px;
+	border:3px solid orange;	
+}

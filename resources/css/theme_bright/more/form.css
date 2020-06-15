@@ -1,0 +1,162 @@
+/* line 1, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 60%;
+  min-height: 600px;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+
+/* line 9, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container, div.wrapper-form .form-login-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+  padding: 15px;
+  transition: 0.4s ease-out;
+}
+
+/* line 17, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form, div.wrapper-form .form-login-container form {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+/* line 25, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form span.form-title, div.wrapper-form .form-login-container form span.form-title {
+  display: block;
+  font-size: 82px;
+  color: white;
+  font-family: font_hebrew;
+  font-weight: 900;
+  text-shadow: 0px 0px 2px black;
+}
+
+/* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form input, div.wrapper-form .form-login-container form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border: none;
+  outline: 1px solid 50%;
+  margin: 10px auto;
+  padding: 5px 15px;
+  font-size: 24px;
+  font-family: font_english, font_hebrew;
+  direction: rtl;
+}
+
+/* line 46, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container, div.wrapper-form .form-login-container form .gender-container {
+  text-align: right;
+  display: flex;
+  margin: 20px auto;
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container div, div.wrapper-form .form-login-container form .gender-container div {
+  width: 50%;
+}
+
+/* line 53, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container label span, div.wrapper-form .form-login-container form .gender-container label span {
+  font-size: 42px;
+  text-shadow: 0 0 2px black;
+  font-weight: 800;
+  color: #3498DB;
+}
+
+/* line 59, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container input, div.wrapper-form .form-login-container form .gender-container input {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  float: right;
+  margin: 0px 20px;
+  background: red;
+}
+
+/* line 66, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container input:after, div.wrapper-form .form-login-container form .gender-container input:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+}
+
+/* line 76, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container input:checked:after, div.wrapper-form .form-login-container form .gender-container input:checked:after {
+  background: #40bfbf;
+  box-shadow: inset 1px 1px 11px rgba(150, 150, 150, 0.3), inset -1px -1px 11px rgba(150, 150, 150, 0.3);
+}
+
+/* line 82, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container .radio-female label span, div.wrapper-form .form-login-container form .gender-container .radio-female label span {
+  color: #EC7063;
+}
+
+/* line 85, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container .radio-female input:checked:after, div.wrapper-form .form-login-container form .gender-container .radio-female input:checked:after {
+  background: #ff8fba;
+  box-shadow: inset 1px 1px 11px rgba(150, 150, 150, 0.3), inset -1px -1px 11px rgba(150, 150, 150, 0.3);
+}
+
+/* line 91, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container .radio-other label span, div.wrapper-form .form-login-container form .gender-container .radio-other label span {
+  color: #99A3A4;
+}
+
+/* line 94, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container form .gender-container .radio-other input:checked:after, div.wrapper-form .form-login-container form .gender-container .radio-other input:checked:after {
+  background: #40b578;
+  box-shadow: inset 1px 1px 11px rgba(150, 150, 150, 0.3), inset -1px -1px 11px rgba(150, 150, 150, 0.3);
+}
+
+/* line 102, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container footer, div.wrapper-form .form-login-container footer {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  text-align: left;
+}
+
+/* line 107, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container footer span, div.wrapper-form .form-login-container footer span {
+  font-size: 24px;
+}
+
+/* line 110, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container footer span.button1, div.wrapper-form .form-login-container footer span.button1 {
+  padding: 15px;
+  background: linear-gradient(-135deg, #f74c4c, #e38577);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 32px;
+  box-shadow: 0 12px 5px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 118, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-registered-container footer span.button1:active, div.wrapper-form .form-login-container footer span.button1:active {
+  transform: translateY(5px) rotateX(15deg);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 125, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/form.scss */
+div.wrapper-form .form-login-container {
+  display: none;
+}

@@ -1,0 +1,225 @@
+/*########################
+    WIDGETS CONTAINER
+########################*/
+article.widgets-container{ /*Container and the Father of all widgets!*/
+    width: 85px;
+    height: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+	  left: 0px;
+	  top: 10%;
+    z-index: 4;
+* {
+    transition: $transition-fast;
+    }
+div.widget-account {
+    position: relative;
+    max-width: 250px;
+    max-height: 70px;
+    background-color: rgb(255,99,71);
+    border-radius: 5px 40px 40px 5px;
+    margin-bottom: 50px;
+    }
+div.widget-follow {
+  @extend .widget-account ;
+}
+}/*Close Widgets Container*/
+div.widget-account-container { /*The Account login System container*/
+    display: block; /*Hide the Account widget*/
+    position: relative;
+    height: 250px;
+    padding: 0px;
+    z-index: 5;
+}
+div.widget-account{ /*The "finger" that slide out*/
+    width: 250px;
+    height: 70px;
+    margin-bottom: 0%;
+}
+div.widget-account div.account-hole { /*White hole - account widget*/
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border:2px solid rgb(255,120,88);
+	background-color: #ffffff;
+}
+div.widget-account img.lockimg{ /*Lock icon - account widget*/
+	position: absolute;
+	top: 20px;
+	right: -45px;
+	width: 90px;
+	height: 90px;
+	transform:rotateZ(-45deg);
+	z-index: 3;
+}
+div.widget-account-container form.account-form {
+    transform: rotateX(90deg);
+    width: 250px;
+	padding:15px;
+	padding-left: 15px;
+	transform-origin: top;
+    background-color: rgba(50,80,150,0.5);
+
+}
+form.account-form input{
+    display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	width: 60%;
+	box-shadow: none;
+}
+form.account-form button{
+	width: 150px;
+	padding:10px 5px;
+	background-color:white;
+	font-size:18px;
+	color:black;
+	cursor: pointer;
+	border:2px solid orange;
+	transition: 0.7s;
+}
+form.account-form button:hover{
+	background-color: orange;
+	color:white;
+	font-size: 20px;
+	border:3px solid orange;
+}
+div.widget-account-container:hover {
+transform: translateX(150px);
+}
+div.widget-account-container:hover form.account-form {
+    animation: flip 2s ease-in;
+    transform: rotateX(0deg);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Profile Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+article.widgets-container div.dropdown{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 19px;
+    font-family: font_hebrew;
+}
+button.profileName {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(64,111,198,0.2);
+    border:1px solid #333f51;
+}
+.caret {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000000;
+}
+.dropdown-menu{
+    min-width: 180px;
+    left:8px;
+    text-align: left;
+    padding: 0;
+}
+.dropdown-header {
+    text-align: right;
+}
+ul.widget-profile li {
+    list-style: none;
+    margin:8px 0;
+    padding: 0;
+    display: inline-block;
+
+}
+.dropdown-header {
+    font-size: 18px;
+}
+ul.widget-profile li a i {
+    font-size: 38px;
+}
+ul.widget-profile li a i:hover {
+    filter: drop-shadow(1px 1px 1px lightblue -1px -1px 1px lightblue);
+}
+div.profileContainer:hover {
+    transform: translateX(50px);
+}
+
+
+div.dropdown button.profile-avatar {
+    width:70px;
+    height: 70px;
+    background: url('../../sourceimages/profile/avatars/graphic_guy_01.png');
+    background-size: contain;
+    border:2px solid black;
+    background-color: white;
+    border-radius: 50%;
+}
+div.dropdown button.profile-avatar:hover {
+    border:2.2px solid lightblue;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Follow Widget Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+ /*Social networking for following*/
+div.follow-facebook, div.follow-youtube{
+    position: absolute;
+    left: -100px;
+	height: 50px;
+    width: 150px;
+    height: 50px;
+}
+div.follow-facebook {
+    background-color: rgb(70,130,180);/*Blue background*/
+    bottom: 20px;
+}
+div.follow-youtube
+{
+    background-color: rgb(128,0,0);/*red background*/
+    bottom: -40px;
+}
+div.follow-facebook div.hole
+{ background:url('../../sourceimages/icons/facebook2.png');
+}
+div.follow-youtube div.hole
+{ background:url('../../sourceimages/icons/youtube2.png');}
+div.widget-follow div.hole{
+	height: 40px;
+	width: 40px;
+    margin: 5px 5px;
+    border-radius: 50%;
+	border:2px solid rgb(70,130,180);
+	background-position: center;
+	background-size: contain;
+}
+div.widget-follow:hover {
+    transform: translateX(60%);
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Other Properties
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+div.widget-up {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 150px;
+    left: 0;
+}
+div.widget-up i {
+    font-size: 52px;
+    color: tomato;
+
+}

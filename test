@@ -1,0 +1,216 @@
+<!--INTRO FOR CSS-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../../../css/includes/overall_style2.css">
+	<link rel="stylesheet" href="../../../css/includes/widgets.css">
+	<link rel="stylesheet" href="../../../css/pages/courses/intro.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>מבוא לHTML</title>
+</head>
+	<body>
+	    <header>
+	    <h1 id="logo">++ECHO<i class="fa fa-leaf"></i></h1>    
+	    <nav class="main-nav">
+		    <ul id="nav-bar-items-top">
+			    <a href="../../../index.php">
+				    <li class="bar-items">דף הבית</li></a>
+				<a href="#">
+				    <li class="bar-items">חדשות</li></a>
+				<a href="#">
+				    <li class="bar-items">צור קשר</li></a>
+				<a href="#">
+				    <li class="bar-items">מי אנחנו</li></a>
+				<a href="pages/form.php">
+				    <li class="bar-items singup">הירשם</li></a>
+				<!--<a href="pages/form.php">
+				    <li class="bar-items login">התחבר</li></a>-->
+				 <li class="bar-items none">|</li>
+				 <a href="../courses_main_page.php" id="try-item">
+				    <li class="bar-items">קורסים</li></a>
+				 <a href="../courses_main_page.php" id="try-item">
+				    <li class="bar-items">הורדות</li></a>
+				 <a href="../courses_main_page.php" id="try-item">
+				    <li class="bar-items">דרושים</li></a>
+
+			</ul>
+			<ul class="nav-bar-items-bottom">
+				<a href="#"><li>תכנות</li></a>
+				<a href="#"><li>מחשבים</li></a>
+				<a href="#"><li>גרפיקה</li></a>
+				<a href="#"><li>האקינג</li></a>
+				<a href="#"><li>מוזיקה</li></a>
+			</ul>
+        </nav>
+	</header>
+	<article id="widgets-container">
+	<div class="widget account">
+		<img id="lockimg" src="../../../sourceimages/icons/lock.png" onerror="if (this.src != 'error.png') this.src = 'sourceimages/icons/lock.png';">
+		<div class="widgets-hole hole-account"></div>
+		<div class="widgets-info-account">
+			<form>
+				<input type="text" name="username" placeholder="username">
+				<input type="password" name="password" placeholder="password">
+				<button type="submit">התחבר</button>
+			</form>
+		</div>
+	</div>
+	<div class="widget share-facebook">
+		<div class="widgets-hole hole-facebook"></div>
+	</div>
+	<div class="widget share-instagram">
+		<div class="widgets-hole hole-instagram"></div>
+		<div class="widgets-info-share">
+		</div>
+	</div>
+	<div class="widget share-twitter">
+		<div class="widgets-hole hole-twitter"></div>
+		<div class="widgets-info-share">
+		</div>
+	</div>
+	<div class="widget share-youtube">
+		<div class="widgets-hole hole-youtube"></div>
+		<div class="widgets-info-share">
+		</div>
+	</div>
+	</article>
+	<div id="wrapper-courses-intro">
+	<nav id="nav-courses-intro-topics">
+		<ul>
+			<h6>בית HTML</h6>
+			<a href="intro.html"><li class="tooltip-element-hover">הקדמה<span class="tooltip-info">INTRO</span></li></a>
+			<a href="basic.html"><li class="active tooltip-element-hover">בסיס<span class="tooltip-info">BASIC</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">איך מתחילים<span class="tooltip-info">GET STARTED</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">תגיות עיקריות<span class="tooltip-info">PRIMARY TAGS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">כותרת<span class="tooltip-info">TITLE</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">ראש<span class="tooltip-info">HEADING</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">פסקה<span class="tooltip-info">PARAGRAPH</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">קישור<span class="tooltip-info">LINK</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">תמונה<span class="tooltip-info">IMAGE</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">רשימות<span class="tooltip-info">LISTS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">מאפיינים<span class="tooltip-info">ATRIBUTES</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">קולטים/מעטפת<span class="tooltip-info">CONTAINERS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">נבחרים<span class="tooltip-info">SELECTORS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">תבנית<span class="tooltip-info">FORMATTING</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">הערות<span class="tooltip-info">COMMENTS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">טבלה<span class="tooltip-info">TABLES</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">מסגרת<span class="tooltip-info">IFRAMES</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">קידוד<span class="tooltip-info">ENCODING</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">HR<span class="tooltip-info">HR</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">כפתור<span class="tooltip-info">BUTTON</span></li></a>
+			<h6>טפסים HTML</h6>
+			<a href="#"><li class="tooltip-element-hover">טופס<span class="tooltip-info">FORM</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">רכיבים<span class="tooltip-info">ELEMENTS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">סוגי קלט<span class="tooltip-info">INPUT TYPES</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">מאפייני קלט<span class="tooltip-info">INPUT ATTRIBUTES</span></li></a>
+			<h6>HTML5</h6>
+			<a href="#"><li class="tooltip-element-hover">מבוא<span class="tooltip-info">INTRO</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">רכיבים חדשים<span class="tooltip-info">NEW ELEMENTS</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">דקדוק<span class="tooltip-info">SEMANTIC</span></li></a>
+			<a href="#"><li class="tooltip-element-hover">קאנווס/בד<span class="tooltip-info">CANVAS</span></li></a>
+		</ul>	
+	</nav>
+	<main id="main-courses-intro">
+		<article id="article-courses-intro">
+		<!--	CONTENT - JUST MODIFY AND DONE-->
+		<!--*************************
+                 SUBJECT 1
+        ****************************--> 
+		<h2>הבסיס העיקרי בשפת HTML</h2><!--Title of the topic-->
+		<h3>אלמנטים</h3><!--Heading of the subject-->
+		<p><!--Content of the subjects-->
+		מסמך HTML עשוי מרכיבי HTML.<br>
+		רכיב HTML נכתב באמצעות:
+		</p>
+        <ol class="courses-intro-list">
+<!--
+            <li class="courses-intro-list-items"><span class="tooltip-element-hover">פתיחת תגית</span>
+            <span class="tooltip-info">start tag/open tag</span>
+            כאשר אנחנו רוצים להתחיל להגדיר אלמנט מסוג מסוים, נשתמש בתגיות ובסוג האלמנט.
+            </li>
+            <li class="courses-intro-list-items"><span class="tooltip-element-hover">פתיחת תגית </span>
+            <span class="tooltip-info">start tag/open tag</span>
+            כאשר אנחנו רוצים להתחיל להגדיר אלמנט מסוג מסוים, נשתמש בתגיות ובסוג האלמנט.
+            </li>
+            <li class="courses-intro-list-items"><span class="tooltip-element" data-toggle="tooltip" title="start tag/open tag">פתיחת תגית </span>
+            כאשר אנחנו רוצים להתחיל להגדיר אלמנט מסוג מסוים, נשתמש בתגיות ובסוג האלמנט.
+            </li>    
+-->
+            <li class="tooltip-element-hover courses-intro-list-items">פתיחת תגית<span class="tooltip-info">start tag/open tag</span></li>
+            <li class="tooltip-element-hover courses-intro-list-items">התוכן שביניהם<span class="tooltip-info">content</span></li>
+            <li class="tooltip-element-hover courses-intro-list-items">סגירת תגית<span class="tooltip-info">end tag/close tag</span></li>
+		</ol>
+        <img class="courses-intro-img" src="../../../sourceimages/examples/examples_html_element.jpg" alt="HTML element design">
+		    <h4>דוגמא</h4><!--Code Heading-->
+       <div class="codeContainer"> <!--CODEBOX-->
+		    <span class="codeBlock">
+                <span class="code html">
+                  <span class="tooltip-element-hover"><!--Write The Tooltip Element below[use &lt; &gt;]-->
+                       
+                       <span class="tooltip-info"><!--Write The Tooltip info below-->
+                   
+                       </span>
+                   </span><!--Write The Code Himself Below-->
+                    
+                   </span>
+		        </span>
+		        <div class="code-description"><!--Write The Code Description below-->
+                    <p class="description-text">
+                    
+                    </p>
+		        </div>
+		</div> <!--Close CODEBOX-->
+        <!--*************************
+                 SUBJECT 2
+        ****************************-->  
+      <h3></h3><!--Heading of the subject-->
+		<p><!--Content of the subjects-->
+	
+        </p>
+        
+        <!--*************************
+                 SUBJECT 3
+        ****************************--> 
+      <h3></h3><!--Heading of the subject-->
+		<p><!--Content of the subjects-->
+	    
+      </p>	
+       <h4>דוגמא</h4><!--Code Heading-->
+        <!--*************************
+                 SUBJECT 4
+        ****************************-->  
+      <h3></h3><!--Heading of the subject-->
+      
+      
+       <!--*************************
+                 SUBJECT END
+        ****************************-->
+		</article>
+	</main>
+	<aside id="aside-courses-intro">
+		<h5>חדשות ועדכונים</h5>
+	</aside>
+</div>
+
+
+
+   
+   <footer>
+       
+   </footer>
+   
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+    </script>
+	</body>
+</html>
+
+
+
+

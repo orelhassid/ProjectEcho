@@ -1,0 +1,1070 @@
+/*
+Default
+*/
+/*#################################
+    Blog List Boxs
+##################################3*/
+/* line 5, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  order: 3;
+  margin: 0;
+  padding: 20px 10px;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba(171, 205, 239, 0.3);
+}
+
+/* line 15, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem {
+  flex-basis: 200px;
+  flex-grow: 200;
+  width: 400px;
+  height: 330px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* line 27, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #FED;
+  background-color: #012;
+}
+
+/* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem header .blog-list-img {
+  width: 70px;
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  transform: translateX(50%);
+  border: 4px solid #ddd;
+  border-radius: 50%;
+}
+
+/* line 42, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem header .date {
+  width: 100%;
+  padding-right: 250px;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem .flexItem-title {
+  width: 100%;
+  padding: 7px;
+  color: white;
+  background: rgba(22, 23, 24, 0.6);
+  font-size: 28px;
+}
+
+/* line 57, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem .blog-flexitem-text {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  padding: 15px;
+}
+
+/* line 62, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem .blog-flexitem-text p {
+  font: 22px font_hebrew, font_pangolin;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+  line-height: 1.3;
+  max-height: 4;
+}
+
+/* line 70, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem footer {
+  width: 100%;
+  height: auto;
+  padding: 7px;
+}
+
+/* line 74, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem footer .myButton {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: inset 0px 1px 0px 0px #54a3f7;
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+  background-color: #007dc1;
+  border-radius: 3px;
+  border: 1px solid #124d77;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: font_hebrew;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+}
+
+/* line 93, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem footer .myButton:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+  background-color: #0061a7;
+}
+
+/* line 98, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem footer .myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 103, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/posts.scss */
+div.blog-list-flexbox div.blog-list-flexItem:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+/*################
+    Blog Style
+#################*/
+/* line 8, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper {
+  width: 80%;
+  margin: 0px auto;
+}
+
+/* line 11, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header {
+  display: flex;
+  flex-flow: row wrap;
+  order: 1;
+  width: 100%;
+  height: 150px;
+  padding: 25px;
+  background: #A1887F;
+}
+
+/* line 19, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header div.blog-header-title {
+  width: 100%;
+  font-size: 42px;
+  text-align: center;
+}
+
+/* line 24, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 27, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container div.buttonStart {
+  align-self: flex-end;
+  position: relative;
+  display: inline-block;
+  font-family: font_hebrew;
+  width: auto;
+  height: auto;
+  padding: 10px 40px 10px 40px;
+  background: #2c3e50;
+  cursor: pointer;
+  box-shadow: 0 4px 5px 0 rgba(50, 50, 50, 0.75);
+  transition: all .4s;
+}
+
+/* line 39, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container div.buttonStart a {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 45, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container div.buttonStart span.clickStart {
+  position: absolute;
+  text-align: center;
+  font-family: font_hebrew;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  transition: all .4s;
+}
+
+/* line 57, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container div.buttonStart:hover {
+  box-shadow: none;
+  border-bottom: solid 8px #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all .4s;
+  transform: scale(0.9) rotate(3deg);
+}
+
+/* line 65, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+article.blog-list-wrapper header .buttonStart-container div.buttonStart:hover span.clickStart {
+  transition: all .4s;
+  background: #fff;
+  bottom: -30px;
+  left: 0px;
+  position: absolute;
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
+
+/*
+div.pagination-container {
+  display: flex;
+  order:5;
+  direction: ltr;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin:10px auto;
+  width: 40%;
+  height: 100px;
+  background: red;
+  padding: 25px;
+}
+a.pagination-items {
+  font-size: 32px;
+  opacity: 0.9;
+  padding: 10px 25px;
+  background:#90A4AE;
+  border-radius: 10px;
+  border:1px solid #546E00;
+  box-shadow: 0px 2px 2px black;
+}
+a.pagination-items:hover {
+  opacity: 1;
+  background:#546E7A;
+  color: #fff;
+  text-decoration: none;
+}*/
+/*#################################################
+                  post Page
+###################################################*/
+/* line 114, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper {
+  width: 95%;
+  min-height: 400px;
+  margin: 10px auto;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  /*##############3
+Comments Lisst
+#################*/
+}
+
+/* line 122, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 125, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container header {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: #012;
+}
+
+/* line 130, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container header div {
+  display: inline-block;
+  padding: 10px;
+  width: 170px;
+  border-radius: 50%;
+  border: 10px solid rgba(52, 73, 94, 0.6);
+  background: #ddd;
+  transition: 1s;
+  perspective: 1px;
+}
+
+/* line 141, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container header div img.post-avatar {
+  width: 100%;
+  filter: drop-shadow(0 0px 5px black);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* line 148, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container header div:hover {
+  transform: translateX(-500px) rotateY(360deg);
+}
+
+/* line 153, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container article {
+  width: 90%;
+  height: 400px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-right: 2px solid #000;
+}
+
+/* line 159, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container article span.post-title {
+  width: 100%;
+  font-size: 44px;
+  border-bottom: 2px solid black;
+}
+
+/* line 164, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .post-user-container article p.post-content {
+  font-size: 22px;
+}
+
+/* line 173, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container {
+  display: none;
+  opacity: 0;
+  flex-flow: row wrap;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 500px;
+  background: rgba(200, 190, 180, 0.7);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: translate(-50%, -50%) rotateX(90deg) skewX(15deg) scaleX(0.1);
+  transform-origin: top center;
+  transition: 1.5s cubic-bezier(0.6, 0.06, 0, 1.28);
+  z-index: 4;
+}
+
+/* line 188, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+/* line 196, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  padding: 20px;
+}
+
+/* line 202, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form div.answer-text {
+  width: 100%;
+  max-height: 80%;
+}
+
+/* line 205, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form div.answer-text textarea {
+  resize: none;
+  width: 100%;
+  overflow: auto;
+  max-height: 100%;
+  line-height: 1.5;
+  border-radius: 7px;
+  padding: 20px 20px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 50px;
+  font-size: 32px;
+  font-family: font_hebrew, font_pangolin;
+  transition: 0.5;
+}
+
+/* line 218, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form div.answer-text textarea textarea:focus {
+  outline: none;
+  border: none;
+  color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 227, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 85%;
+  margin-top: auto;
+}
+
+/* line 232, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer input {
+  margin: 5px;
+  padding: 5px 7px;
+  border: 1px solid black;
+  font-size: 26px;
+  display: inline-block;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 240, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer input:focus {
+  outline: #FFC107 solid 2px;
+  color: black;
+}
+
+/* line 245, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer span {
+  display: block;
+  font-size: 22px;
+  color: #212021;
+}
+
+/* line 251, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn {
+  width: 200px;
+  height: 70px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0px;
+  padding-top: 15px;
+  font-size: 32px;
+  font-family: font_hebrew;
+  font-weight: 800;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* line 265, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:before, .post-wrapper article.post-answer-container form footer button.custom-btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+/* line 277, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+/* line 281, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:hover:before {
+  height: 100%;
+}
+
+/* line 282, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:hover:after {
+  width: 100%;
+}
+
+/* line 283, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:hover {
+  background: #76FF03;
+  box-shadow: 0 3px 4px #012342;
+  transform: scale(1.02);
+}
+
+/* line 284, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn:active {
+  background: #64DD17;
+}
+
+/* line 285, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 290, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span:before, .post-wrapper article.post-answer-container form footer button.custom-btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+/* line 298, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+/* line 302, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span:after {
+  width: 0%;
+  height: 2px;
+}
+
+/* line 306, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span:hover:before {
+  height: 100%;
+}
+
+/* line 307, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form footer button.custom-btn span:hover:after {
+  width: 100%;
+}
+
+/* line 312, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form aside {
+  position: relative;
+  padding: 35px 5px;
+  text-align: center;
+  width: 20%;
+  height: 100%;
+  font-size: 32px;
+  border-left: 4px solid black;
+  background: #FF7043;
+}
+
+/* line 321, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form aside img {
+  width: 50%;
+  order: 1;
+}
+
+/* line 326, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form aside span {
+  width: 200px;
+}
+
+/* line 328, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form aside span input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 335, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container form aside span input::selection {
+  background: red;
+}
+
+/* line 342, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container div.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 42px;
+  cursor: pointer;
+  transition: 0.4s cubic-bezier(0.36, 0.17, 0.41, 1.65);
+}
+
+/* line 349, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container div.close-btn:hover {
+  color: red;
+  font-size: 52px;
+}
+
+/* line 355, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 360, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container header, .post-wrapper article.post-answer-container .form-session-container footer {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 365, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container header span, .post-wrapper article.post-answer-container .form-session-container footer span {
+  display: block;
+  padding: 35px 10px;
+  font-size: 52px;
+  margin: auto;
+}
+
+/* line 372, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60%;
+  background: rgba(20, 20, 20, 0.9);
+  box-shadow: 0 -12px 15px rgba(60, 60, 60, 0.6);
+  filter: sepia(50px);
+}
+
+/* line 379, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer div {
+  width: 50%;
+  height: 300px;
+  text-align: center;
+}
+
+/* line 383, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer div span {
+  display: block;
+  padding: 35px 10px;
+  font-size: 42px;
+  margin: auto;
+  color: #fff;
+  font-weight: 900;
+}
+
+/* line 391, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer div a {
+  margin: 10px auto;
+  padding: 25px;
+  font-size: 28px;
+  border-radius: 9px;
+  background: #fed;
+  border: 6px solid #CC0066;
+  text-decoration: none;
+  color: #000;
+  transition: 1s;
+}
+
+/* line 402, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer div a:hover {
+  background: #CC0066;
+  border: 6px solid #fed;
+  color: #fff;
+}
+
+/* line 409, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container footer div::nth-child(2) {
+  border-right: 6px dashed hotpink;
+}
+
+/* line 413, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-answer-container .form-session-container .background-element {
+  height: 40%;
+  background: url("../../../sourceimages/google/vendor_02.png");
+  background-position: bottom;
+  opacity: 0.5;
+}
+
+/* line 425, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 95%;
+  min-height: 600px;
+  background: #e8e3e3;
+  margin: 10px auto;
+}
+
+/* line 433, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list {
+  width: 95%;
+  height: 95%;
+  margin: 20px auto;
+}
+
+/* line 437, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 440, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 50px;
+  border-bottom: 4px solid #fefefe;
+  padding: 8px 2px;
+}
+
+/* line 448, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 15%;
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+  border-left: 2px solid #fed;
+}
+
+/* line 458, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-avatar {
+  width: 80%;
+  text-align: left;
+}
+
+/* line 461, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-avatar img {
+  width: 50%;
+  margin-left: 30px;
+}
+
+/* line 466, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-chat {
+  width: 20%;
+  padding: 4px 6px;
+  border-right: 4px solid #52BE80;
+}
+
+/* line 470, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-chat i {
+  font-size: 34px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* line 475, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-chat i:hover {
+  color: #efefef;
+  text-shadow: 0 0 3px black;
+}
+
+/* line 481, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-details {
+  width: 100%;
+}
+
+/* line 483, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-details span {
+  display: inline;
+  font-size: 24px;
+}
+
+/* line 487, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comments-users-profile div.comment-details span:nth-child(3) {
+  font-size: 20px;
+}
+
+/* line 493, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container {
+  position: relative;
+  width: 75%;
+  height: auto;
+}
+
+/* line 498, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .comment-user-text p {
+  font-size: 22px;
+  padding: 5px 15px;
+}
+
+/* line 503, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* line 512, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit textarea {
+  width: 100%;
+  height: 70%;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+}
+
+/* line 520, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit textarea:focus {
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 526, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit .comment-edit-btn1, .post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit .comment-edit-btn2 {
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 5px;
+  background: green;
+}
+
+/* line 534, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-text-container .form-post-edit .comment-edit-btn2 {
+  background: red;
+}
+
+/* line 540, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-user-rate {
+  display: flex;
+  flex-flow: row wrap;
+  width: 10%;
+  height: 150px;
+  order: 3;
+  padding: 8px;
+}
+
+/* line 547, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-user-rate span {
+  width: 100%;
+  font-size: 32px;
+  padding: 0 8px;
+}
+
+/* line 552, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-user-rate span:nth-child(4) {
+  text-align: left;
+}
+
+/* line 555, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-user-rate div {
+  width: 50%;
+  text-align: center;
+}
+
+/* line 558, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul li.comments-users-block div.comment-user-rate div i {
+  font-size: 38px;
+}
+
+/* line 566, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul div.post-comments-error {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 569, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container .post-comments-list ul div.post-comments-error span {
+  font-size: 42px;
+}
+
+/* line 579, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper article.post-comments-container footer div button {
+  width: 80%;
+}
+
+/* line 587, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper footer.post-footer {
+  align-self: flex-end;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background: rgba(184, 200, 216, 0.4);
+}
+
+/* line 593, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper footer.post-footer div.post-footer-div {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin-right: auto;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+/* line 600, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper footer.post-footer div.post-footer-div button.post-footer-button {
+  width: 50%;
+  height: 50px;
+  padding: 5px;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: 900;
+  background: white;
+  color: #21a558;
+  border: none;
+  box-shadow: inset 0px 0px 2px #010101;
+  transition: 0.7s ease;
+}
+
+/* line 612, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper footer.post-footer div.post-footer-div button.post-footer-button:active {
+  background: linear-gradient(#21a558, #229954);
+  box-shadow: inset 0px 0px 6px 1.5px #000101;
+}
+
+/* line 616, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper footer.post-footer div.post-footer-div button.post-footer-button:hover {
+  background: linear-gradient(#229954, #21a558);
+  color: white;
+  font-size: 26px;
+}
+
+/* line 624, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .hot-posts-container {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* line 627, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .hot-posts-container div.blog-list-flexbox {
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px 10px;
+  border-radius: 3px;
+  background: rgba(171, 205, 239, 0.3);
+}
+
+/* line 633, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-wrapper .hot-posts-container div.blog-list-flexbox div.blog-list-flexItem {
+  flex-basis: 500px;
+  flex-grow: 200;
+  width: 300px;
+  height: 330px;
+  margin: 20px;
+  background-color: #ddd;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    NEW POST
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 647, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper {
+  width: 70%;
+}
+
+/* line 649, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper header {
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 0px;
+}
+
+/* line 654, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper header span {
+  font-size: 42px;
+}
+
+/* line 660, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: auto;
+  padding: 30px 20px;
+  margin: 10px auto;
+}
+
+/* line 667, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form textarea.form-post-title, .post-new-wrapper .form-wrapper form textarea.form-post-content {
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 32px;
+  overflow: auto;
+  resize: none;
+}
+
+/* line 677, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form textarea.form-post-content {
+  min-height: 300px;
+  font-size: 22px;
+}
+
+/* line 682, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper {
+  position: relative;
+  width: 50%;
+  max-height: 500px;
+}
+
+/* line 686, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-upload-title {
+  display: block;
+  width: 70%;
+  height: auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 32px;
+}
+
+/* line 695, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-upload-container {
+  width: 50%;
+  margin: 20px 0;
+}
+
+/* line 699, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-upload-container .img-resize {
+  padding: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  resize: both;
+  cursor: pointer;
+}
+
+/* line 707, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-upload-container .check-sign {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 200px;
+  width: 90px;
+  height: 90px;
+}
+
+/* line 715, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-upload-container input[type=file] {
+  display: none;
+}
+
+/* line 720, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form .form-upload-wrapper .form-post-submit {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+  margin-top: 70px;
+}
+
+/* line 729, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* line 735, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper .form-wrapper form span.upload-image-plus {
+  display: block;
+  font-size: 62px;
+  width: 50%;
+  cursor: pointer;
+}
+
+/* line 744, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/blog.scss */
+.post-new-wrapper button[type="submit"] {
+  font-size: 28px;
+}

@@ -1,0 +1,528 @@
+/* line 10, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  width: 800px;
+  height: 7%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  z-index: 4;
+}
+
+/* line 25, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container header {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 32px;
+  background: rgba(20, 20, 20, 0.7);
+}
+
+/* line 32, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container header i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 34px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 41, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 100%;
+  padding: 20px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  overflow: auto;
+}
+
+/* line 51, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+
+/* line 55, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper span {
+  font-size: 22px;
+  display: block;
+  padding-right: 60px;
+  margin: 5px 0px;
+}
+
+/* line 61, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* line 66, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=text] {
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  display: inline;
+  width: 100%;
+  margin-bottom: 12px;
+  position: relative;
+  padding: 5px 10px;
+}
+
+/* line 75, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=text]:focus {
+  outline: none;
+}
+
+/* line 79, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=text]:focus ~ span.underline.right, .profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=text]:focus ~ span.underline.center {
+  width: 80%;
+  background: #1A237E;
+}
+
+/* line 83, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=text]:focus ~ span.underline.center {
+  width: 80%;
+  right: 10%;
+  background: #19527e;
+  border-radius: 20px;
+  border: 2px solid #19527e;
+}
+
+/* line 90, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input span.underline.right, .profile-editor-container form .profile-input-wrapper div.profile-editor-input span.underline.center {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+  display: inline-block;
+  height: 3px;
+  width: 10%;
+  background: #7986CB;
+  transition: 0.4s ease;
+}
+
+/* line 100, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input span.underline.center {
+  right: 40%;
+}
+
+/* line 104, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input input[type=checkbox] {
+  display: none;
+}
+
+/* line 107, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-input-wrapper div.profile-editor-input label {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+/* line 114, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo {
+  width: 50%;
+  height: 60%;
+  border-right: 2px dashed seagreen;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* line 120, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1, .profile-editor-container form .profile-editor-photo div.photo2 {
+  display: block;
+  width: 100%;
+}
+
+/* line 123, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 span, .profile-editor-container form .profile-editor-photo div.photo2 span {
+  display: block;
+  font-size: 22px;
+  width: 100%;
+}
+
+/* line 128, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 label, .profile-editor-container form .profile-editor-photo div.photo2 label {
+  width: 100%;
+  position: relative;
+}
+
+/* line 131, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 label img.round, .profile-editor-container form .profile-editor-photo div.photo1 label img.square, .profile-editor-container form .profile-editor-photo div.photo2 label img.round, .profile-editor-container form .profile-editor-photo div.photo2 label img.square {
+  border: 4px solid #f28877;
+  width: 40%;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px;
+  transition: 0.7s;
+}
+
+/* line 138, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 label img.round:hover, .profile-editor-container form .profile-editor-photo div.photo1 label img.square:hover, .profile-editor-container form .profile-editor-photo div.photo2 label img.round:hover, .profile-editor-container form .profile-editor-photo div.photo2 label img.square:hover {
+  border: 4px solid transparent;
+  padding: 1px;
+  box-shadow: inset 1px 1px 2px transparent, -1px -1px 2px transparent;
+  transform: scale(1.1);
+}
+
+/* line 146, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 label img.square, .profile-editor-container form .profile-editor-photo div.photo2 label img.square {
+  width: 80%;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+/* line 153, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-editor-container form .profile-editor-photo div.photo1 #checkSign1, .profile-editor-container form .profile-editor-photo div.photo1 #checkSign2, .profile-editor-container form .profile-editor-photo div.photo2 #checkSign1, .profile-editor-container form .profile-editor-photo div.photo2 #checkSign2 {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../../../sourceimages/icons/check-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 170, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container {
+  width: 100%;
+  min-height: 1000px;
+}
+
+/* line 173, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../sourceimages/google/vendor_03.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+/* line 182, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header .profile-photo {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  width: 400px;
+  height: 500px;
+  background: transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  z-index: 2;
+}
+
+/* line 197, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header .profile-photo img {
+  width: 100%;
+}
+
+/* line 200, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header .profile-photo .profile-edit-info {
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+/* line 209, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header .profile-photo .profile-edit-info i {
+  font-size: 65px;
+  color: black;
+  cursor: pointer;
+}
+
+/* line 214, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container header .profile-photo .profile-edit-info:hover {
+  color: pink;
+}
+
+/* line 221, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container .profile-details {
+  position: relative;
+  display: flex;
+  width: 75%;
+  height: auto;
+  margin: 25px;
+}
+
+/* line 227, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container .profile-details .profile-details-title {
+  text-align: center;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* line 231, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container .profile-details .profile-details-title span {
+  font-size: 7em;
+  display: block;
+  font-family: font_hebrew, font_english;
+  padding: 10px 30px;
+  background: grey;
+  background: linear-gradient(to right, #444 20%, #FFF 40%, #555 60%, #000 80%);
+  background-size: 200% auto;
+  color: #FFF;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite reverse;
+}
+
+/* line 248, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul {
+  width: 50%;
+  height: 100%;
+}
+
+/* line 251, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+/* line 254, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li span {
+  font-size: 42px;
+  margin-right: 150px;
+}
+
+/* line 258, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  height: 220px;
+  margin: 30px 0;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: #F7DC6F;
+}
+
+/* line 267, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme .aboutme-text {
+  width: 80%;
+  padding: 15px 20px;
+}
+
+/* line 270, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme .aboutme-text form {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme .aboutme-text form textarea {
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* line 282, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme .aboutme-mood {
+  width: 20%;
+  text-align: center;
+  background: #F5B041;
+  padding: 15px 20px;
+}
+
+/* line 287, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-page-container ul li .aboutme .aboutme-mood i {
+  font-size: 100px;
+  margin: 10px auto;
+}
+
+/* line 296, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic {
+  width: 100%;
+  height: 500px;
+  margin: 80px auto;
+  margin-top: 60px;
+}
+
+/* line 301, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+/* line 308, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox div {
+  position: relative;
+  height: 100%;
+  width: 100px;
+  margin: 0px 10%;
+}
+
+/* line 313, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox div:nth-child(1) {
+  background: linear-gradient(rgba(169, 204, 227, 0) 30%, #2980b9 40%);
+  border: 1px solid blue;
+}
+
+/* line 314, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox div:nth-child(2) {
+  background: linear-gradient(rgba(129, 199, 132, 0) 50%, #43a047 70%);
+  border: 1px solid green;
+}
+
+/* line 315, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox div:nth-child(3) {
+  background: linear-gradient(rgba(236, 112, 99, 0) 70%, #d32f2f 90%);
+  border: 1px solid red;
+}
+
+/* line 316, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.profile-statistic .profile-statistic-flexbox div .statistic-icon {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 82px;
+  text-shadow: 0 0 2px #000;
+}
+
+/* line 331, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container {
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px 7px;
+  min-height: 500px;
+}
+
+/* line 336, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container header.post-container-header {
+  width: 100%;
+  border-bottom: 2px solid lightpink;
+  text-align: center;
+}
+
+/* line 340, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container header.post-container-header span {
+  font-size: 72px;
+  letter-spacing: 5px;
+}
+
+/* line 345, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  width: 90%;
+  height: auto;
+  margin: 10px auto;
+  padding: 50px 25px;
+}
+
+/* line 353, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background: whitesmoke;
+  border-radius: 25px;
+  margin: 30px 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 363, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box > * {
+  padding: 10px 7px;
+}
+
+/* line 366, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box header {
+  width: 100%;
+  background: seagreen;
+  border-radius: 25px 25px 0 0;
+}
+
+/* line 370, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box header span {
+  font-size: 32px;
+}
+
+/* line 375, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box .post-box-content {
+  width: 100%;
+  height: 60%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  overflow: auto;
+}
+
+/* line 381, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box .post-box-content span {
+  font-size: 22px;
+}
+
+/* line 386, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box footer {
+  width: 100%;
+  text-align: center;
+  background: lightblue;
+  padding: 10px 15px;
+  border-radius: 0 0 25px 25px;
+}
+
+/* line 392, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box footer span {
+  font-size: 18px;
+}
+
+/* line 396, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box .post-photo {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* line 404, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+.post-list-container .post-list-flexbox .post-box .post-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 412, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/profile.scss */
+div::-webkit-scrollbar-thumb {
+  background-color: #00ee8a;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent));
+}

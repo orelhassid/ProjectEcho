@@ -1,0 +1,501 @@
+/* line 2, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer {
+  /*
+STYLING FOR CSS
+ */
+}
+
+/* line 4, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics {
+  width: 15%;
+  height: auto;
+  background-color: #ddd;
+  resize: both;
+}
+
+/* line 9, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul {
+  padding: 5px;
+  height: 1600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* line 14, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  font-size: 22px;
+  font-weight: 900;
+  background-color: #eee;
+}
+
+/* line 21, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li:hover:not(.active) {
+  background-color: #c4fff7;
+}
+
+/* line 24, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li.active {
+  background-color: #1bad9b;
+  border-left: 5px solid black;
+  border-radius: 5px 10px;
+}
+
+/* line 29, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li + .tooltip > .tooltip-inner {
+  background-color: #73AD21;
+  color: #FFFFFF;
+  border: 1px solid #5D6D7E;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* line 36, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li a {
+  padding: 10px;
+}
+
+/* line 40, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul h6 {
+  padding: 10px 15px;
+  padding-top: 20px;
+  font-size: 28px;
+  background-color: #eee;
+}
+
+/* line 46, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer nav.nav-courses-intro-topics ul li.tooltip-element-hover .tooltip-info {
+  left: 5px;
+}
+
+/* line 52, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer .tutorial-css {
+  font-size: 70px;
+}
+
+/* line 56, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer .tutorial-css ul li:hover:not(.active) {
+  background-color: #ffecc4;
+}
+
+/* line 59, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer .tutorial-css ul li.active {
+  background-color: #ad701a;
+  border-left: 5px solid black;
+  border-radius: 5px 10px;
+}
+
+/* line 68, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container {
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 30px;
+  /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    MESSAGE INFO
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+  /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+    Next and Previous button
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+}
+
+/* line 73, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container h1.title-topic {
+  /*Title of the topic*/
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 42px;
+  margin: 10px auto;
+  background-color: rgba(112, 128, 144, 0.8);
+  border-bottom: 2px solid #667664;
+}
+
+/* line 82, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container h2.title-subject {
+  /*Title of the subject*/
+  width: 100%;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 50px;
+  direction: rtl;
+  text-align: right;
+}
+
+/* line 90, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container h4.title-example {
+  /*Title of the Example Code*/
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px;
+  border-right: 3px solid red;
+  border-top: 3px solid red;
+  border-top-right-radius: 10px;
+}
+
+/* line 99, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container p.text-subject {
+  /*content of the subject*/
+  width: 100%;
+  font-size: 28px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+/* line 104, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container p.text-subject span.text-extra-subject {
+  /*Extra*/
+  color: black;
+  font-weight: 800;
+  margin: 0 1px;
+}
+
+/* line 111, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container ol.list-subject, section.mainContainer section.tutorial-container ul.list-subject {
+  /*Order-List of the subject*/
+  width: 100%;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+/* line 116, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container ol.list-subject li.list-subject-items, section.mainContainer section.tutorial-container ul.list-subject li.list-subject-items {
+  /*List-items of the subject*/
+  position: relative;
+  margin-bottom: 15px;
+  list-style-type: square;
+}
+
+/* line 120, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container ol.list-subject li.list-subject-items span.items-firstWord, section.mainContainer section.tutorial-container ul.list-subject li.list-subject-items span.items-firstWord {
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 1px black;
+}
+
+/* line 129, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.image-subject {
+  /*Image of the subject*/
+  width: 60%;
+  margin: 10px 25px;
+  overflow: hidden;
+}
+
+/* line 133, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.image-subject img.image-subject-object {
+  width: 100%;
+  filter: drop-shadow(1px 1px 2px #111);
+}
+
+/* line 139, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container table.table-subject {
+  /*Table of the subject*/
+  font-size: 16px;
+  margin: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 70%;
+}
+
+/* line 145, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container table.table-subject .table-subject tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+/* line 150, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container table.table-subject .table-subject tr th {
+  font-size: 32px;
+  padding: 5px 15px;
+  text-align: right;
+  background-color: #329d88;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px #999;
+  border-bottom: 1px solid #777;
+}
+
+/* line 159, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container table.table-subject .table-subject tr td {
+  padding: 10px 15px;
+  background-color: #ecf0f3;
+}
+
+/* line 165, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer {
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 5px 0 15px;
+  background-color: #b6c9d8;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px #dbdbdb;
+  border-top: 6px solid #7ca1ff;
+  text-align: left;
+}
+
+/* line 174, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer h4.title-example-code {
+  display: block;
+  font-size: 24px;
+  width: 50%;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  font-family: courier new;
+  text-align: right;
+}
+
+/* line 185, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock {
+  max-width: 100%;
+  display: inline-block;
+  margin: 10px 20px;
+  direction: ltr;
+  border: solid 1px #ddd;
+  border-left: 5px solid #589d32;
+  background: #ecf0f1;
+}
+
+/* line 193, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code {
+  display: block;
+  white-space: wrap;
+  margin-right: 90px;
+  margin-left: 20px;
+  padding: 30px 5px;
+  font-family: font_code;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  /*Colors OF code Elements*/
+}
+
+/* line 204, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code span.code-attribute:after {
+  content: '=';
+  color: black;
+  margin-right: -8px;
+}
+
+/* line 209, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code .code-tag {
+  color: #2980B9;
+}
+
+/* line 210, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code .code-attribute {
+  color: #43A047;
+}
+
+/* line 211, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code .code-value {
+  color: #BA4A00;
+}
+
+/* line 212, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeBlock .code .tooltipCode {
+  position: relative;
+  cursor: pointer;
+  color: #36abcb;
+  white-space: normal;
+  font-weight: 600;
+  filter: saturate(5);
+}
+
+/* line 222, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer div.code-description {
+  position: relative;
+  float: left;
+  margin-left: 10%;
+  padding: 25px 35px;
+  min-width: 150px;
+  max-height: 180px;
+  font-size: 22px;
+  background-color: #ecf0f1;
+  border-top-left-radius: 25px;
+}
+
+/* line 232, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer div.code-description .description-text {
+  color: #111;
+}
+
+/* line 235, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer div.code-description div.code-description:after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(#1b7253, transparent);
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 5px;
+}
+
+/* line 245, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeRunBtn {
+  float: right;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 22px;
+  background-color: #dd3715;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #dddccc;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* line 261, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container div.codeContainer .codeRunBtn:active {
+  transform: translateY(2px);
+}
+
+/* line 269, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container {
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 12px 18px;
+  background-color: #FFEB3B;
+  border-radius: 8px 8px 8px 0px;
+  box-shadow: 2px 2px 3px #616161;
+  color: #000;
+}
+
+/* line 283, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject.yellow {
+  background-color: #FFEB3B;
+}
+
+/* line 284, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject.red {
+  background-color: #F44336;
+}
+
+/* line 285, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject.green {
+  background-color: #4CAF50;
+}
+
+/* line 288, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject span.message-icon i {
+  font-size: 52px;
+  margin: auto;
+}
+
+/* line 294, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.info-message-subject span.message-text {
+  font-size: 22px;
+}
+
+/* line 299, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.message-quiz {
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  background-color: #4CAF50;
+  border-top: 3px solid #4CAF50;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 2px 2px 3px #616161;
+  padding: 10px 20px;
+}
+
+/* line 308, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.message-quiz ul {
+  margin: 10px;
+}
+
+/* line 310, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.message-container div.message-quiz ul li {
+  font-size: 22px;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* line 323, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer {
+  display: flex;
+  width: 100%;
+  display: block;
+}
+
+/* line 327, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer div.btn-container-next-prev {
+  position: relative;
+  border-top: 2px solid black;
+  margin-top: 10%;
+  width: 100%;
+}
+
+/* line 333, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer div.btn-container-next-prev > a {
+  position: absolute;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* line 339, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer div.btn-container-next-prev > a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* line 343, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer a.btn-next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* line 347, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer a.btn-prev {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* line 351, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer div.btn-container-next-prev a#btn-next {
+  right: 10px;
+}
+
+/* line 354, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container article.subject-footer div.btn-container-next-prev a#btn-prev {
+  left: 10px;
+}
+
+/* line 359, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+section.mainContainer section.tutorial-container span.subject-steps {
+  padding: 10px 18px;
+  margin: 10px;
+  font-size: 32px;
+  color: #DC7633;
+  background: #229954;
+  border-radius: 50%;
+  border: 0.8px solid #ECF0F1;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 374, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+  nav.nav-courses-intro-topics {
+    transition: width 1s;
+    width: 0%;
+  }
+  /* line 378, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/tutorials.scss */
+  .mainContainer {
+    transition: width 1s;
+    width: 90%;
+  }
+}

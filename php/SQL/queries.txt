@@ -1,0 +1,27 @@
+CREATE DATABASE echoDB;
+CREATE TABLE users (
+	userID int NOT NULL AUTO_INCREMENT,
+    username varchar(500),
+    password varchar(500),
+    firstName varchar(150),
+    lastName varchar(150),
+    nickName varchar(500),
+    age int,
+    state varchar(150) DEFAULT 'Israel',
+    city varchar(250),
+    phoneNumber varchar(150),
+	active int DEFAULT 0,
+	PRIMARY KEY(userID)
+);
+
+
+
+
+USE echodb;
+CREATE TABLE course(
+    course_id int NOT NULL AUTO_INCREMENT,
+    course_name VARCHAR(100) NOT NULL,
+    course_brief VARCHAR(1000) NOT NULL,
+    course_logo VARCHAR(500) NOT NULL,
+    PRIMARY KEY(course_id)
+);

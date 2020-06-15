@@ -1,0 +1,367 @@
+/* line 1, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container {
+  position: relative;
+  padding-right: 300px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../sourceimages/wallpapers/wall_texture2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  /*Close Window Container*/
+}
+
+/* line 10, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  height: 400px;
+  -webkit-perspective: 700px;
+  z-index: 2;
+  /*Close Frame Front*/
+}
+
+/* line 17, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-left, div.frame-container article.window div.frame-right {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-image: url("../../sourceimages/decoration/window-frame3.png");
+  background-position: top left;
+  background-size: 100% 100%;
+  box-shadow: -6px 0px 2px #CCD1D1, -8px 0px 4px #212F3D;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  z-index: 4;
+  transition: 1s ease-in;
+}
+
+/* line 31, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-right {
+  right: 0;
+  background-position: top right;
+  box-shadow: 6px 0px 2px #CCD1D1, 8px 0px 4px #212F3D;
+  transform-origin: right center;
+  transform: rotateY(0deg);
+}
+
+/* line 39, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-front {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  height: 100%;
+  width: 100%;
+  border: 2px solid #212134;
+  background-image: url("../../sourceimages/wallpapers/window_night.png");
+  background-size: cover;
+  background-position: center;
+  transform-origin: top;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+/* line 52, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window div.frame-front img.window-gif {
+  position: absolute;
+  top: 0;
+  width: 60%;
+  animation: birdsAnim 4s ease-in infinite;
+  z-index: 1;
+}
+
+/* line 60, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window .open-window-left {
+  transform: rotateY(-180deg) !important;
+}
+
+/* line 63, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container article.window .open-window-right {
+  transform: rotateY(180deg) !important;
+}
+
+/* line 68, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf,
+div.frame-container div.flowers-shelf,
+div.frame-container div.character-read,
+div.frame-container div.speech-bubble {
+  position: absolute;
+  width: 25%;
+}
+
+/* line 75, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf img, div.frame-container div.flowers-shelf img, div.frame-container div.character-read img {
+  width: 100%;
+  filter: drop-shadow(1px -1px 1px #999);
+}
+
+/* line 79, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.books-shelf {
+  top: 50px;
+  right: 70px;
+}
+
+/* line 83, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.flowers-shelf {
+  right: 65%;
+  top: 75.6%;
+  width: 90px;
+  z-index: 3;
+}
+
+/* line 89, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.character-read {
+  bottom: 0px;
+  right: 50px;
+  width: 240px;
+}
+
+/* line 94, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.speech-bubble {
+  width: 250px;
+  height: 250px;
+  right: 250px;
+  bottom: 25px;
+  background-image: url("../../sourceimages/decoration/speech_bubble.png");
+  background-size: 100% 100%;
+  transform: scale(0.2);
+  transition: 0.4s cubic-bezier(0.25, 0.1, 0.26, 1.44);
+}
+
+/* line 104, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container div.speech-bubble p {
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  padding: 55px 42px 0px 10px;
+}
+
+/*Close Frame Container*/
+/* line 112, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+span.course-heading {
+  display: block;
+  font-size: 32px;
+  margin-left: 55px;
+  margin-top: 25px;
+  padding: 15px 20px;
+  color: #111;
+  letter-spacing: 10px;
+  font-weight: 900;
+  border-right: 6px solid pink;
+  font-family: font_hebrew;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$
+    Backgrounds
+$$$$$$$$$$$$$$$$$$$$$$*/
+/* line 127, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+.coursesBG, div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG {
+  filter: sepia(20%);
+  box-shadow: inset 2px 2px 5px #eeeeee;
+  border-radius: 5px 1px 1px 5px;
+  border-right: 60px solid rgba(50, 64, 64, 0.5);
+  z-index: -4;
+}
+
+/* line 136, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.programmingBG {
+  background-image: url("../../sourceimages/wallpapers/programming_wall.png");
+}
+
+/* line 140, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.computersBG {
+  background-image: url("../../sourceimages/wallpapers/network_wall.png");
+}
+
+/* line 144, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.graphicBG {
+  background-image: url("../../sourceimages/wallpapers/art_wall.png");
+}
+
+/* line 148, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.animationBG {
+  background-image: url("../../sourceimages/wallpapers/animation_wall.png");
+}
+
+/* line 152, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.otherBG {
+  background-image: url("../../sourceimages/wallpapers/dance_wall.png");
+}
+
+/*$$$$$$$$$$$$$$$$
+    Flex Elements - Courses Package
+$$$$$$$$$$$$$$$$$$*/
+/* line 159, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses {
+  /*The Flex Box*/
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2px 5px 30px 0px;
+  width: 100%;
+  height: auto;
+  padding-right: 0px;
+  z-index: 1;
+  /*Close Box*/
+}
+
+/* line 168, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs {
+  /*The Flex Items*/
+  position: relative;
+  width: 380px;
+  height: 260px;
+  margin: 20px 78px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fefefe;
+  font-family: font_hebrew;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px white;
+  /*top internal highlight*/
+  opacity: 0;
+  transform: translateX(0px) rotateY(95deg);
+  transition: transform 0.5s ease-out, opacity 0.8s;
+  /*Close Modal*/
+}
+
+/* line 182, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs header.box-course-header {
+  background-color: rgba(150, 254, 200, 0.2);
+  border-bottom: 3px solid orange;
+  padding: 10px 15px;
+}
+
+/* line 187, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs img.box-course-logo {
+  /*Image Logo*/
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  margin-left: 15px;
+}
+
+/* line 193, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs h2.box-course-title {
+  /*The title*/
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 36px;
+  font-family: font_english;
+}
+
+/* line 199, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs p.box-course-info {
+  /*The Discription*/
+  line-height: 30px;
+  margin: 15px;
+  font-size: 22px;
+  font-family: font_hebrew, font_pangolin;
+  font-weight: 900;
+}
+
+/* line 206, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.box-course-3d {
+  /*The 3D Box*/
+  position: absolute;
+  left: -80px;
+  height: inherit;
+  width: 80px;
+  background-color: #E74C3C;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.5), inset 0 1px 1px white;
+  /*top internal highlight*/
+  transform: rotateY(90deg);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+/* line 218, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(20, 20, 30, 0.5);
+  transition: opacity 0.2s ease-out;
+}
+
+/* line 229, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  border-radius: 4px;
+  background-color: #228B22;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  font-family: font_pangolin;
+  cursor: pointer;
+  transition: 2.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* line 247, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton:after {
+  content: '\00bb';
+  opacity: 0;
+  margin-right: 0px;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+/* line 254, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs div.boxModel button.modelButton:hover:after {
+  content: '\00bb \00bb \00bb';
+  opacity: 1;
+  margin-right: 10px;
+  font-size: 28px;
+  transition: 0.5s;
+}
+
+/* line 263, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover .boxModel {
+  background-color: rgba(20, 20, 30, 0.5);
+  opacity: 1;
+  right: 0;
+}
+
+/* line 268, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover div.box-course-3d {
+  transform: rotateY(2deg);
+  animation: colorful 2s linear 0s infinite alternate;
+  border-right: 2px solid #5b1811;
+}
+
+/* line 273, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+article.flex-boxs-courses div.boxs:hover {
+  transform: translateX(50px) rotateY(0deg);
+  border-left: 2px solid #5b1811;
+}
+
+/*Close FlexBox Coursess*/
+/* line 279, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+div.frame-container-computers {
+  background-image: url("../../sourceimages/wallpapers/wall_09.jpg");
+}
+
+/* line 282, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/courses.scss */
+.background-element, .coursesBG, div.programmingBG, div.computersBG, div.graphicBG, div.animationBG, div.otherBG {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -4;
+}

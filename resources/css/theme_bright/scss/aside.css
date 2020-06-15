@@ -1,0 +1,74 @@
+/* line 1, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+article.mainModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5;
+}
+
+/* line 14, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* line 24, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+img.modalimg {
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  border: #ccc;
+  transition: all 2s;
+}
+
+/* line 33, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+img.modalimg, span.closeModal {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* line 37, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+div.modalcontent {
+  display: block;
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+  font-size: 32px;
+  color: #eee;
+  padding: 20px;
+  border-top: 2px solid red;
+}
+
+/* line 48, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal:hover {
+  color: palevioletred;
+}
+
+/* line 51, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/scss/aside.scss */
+span.closeModal:active {
+  color: darkred;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0) rotateY(180deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}

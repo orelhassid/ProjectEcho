@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+/* line 3, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  z-index: 0;
+}
+
+/* line 10, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg text {
+  fill: #fff;
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+
+/* line 15, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg text tspan {
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+/* line 22, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg line, svg polyline, svg ellipse, svg path {
+  stroke: #fff;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
+  opacity: 0;
+  stroke-miterlimit: 10;
+}
+
+/* line 32, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .dec {
+  stroke-width: 3;
+}
+
+/* line 36, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .underline {
+  stroke-width: 6;
+  stroke-linecap: butt;
+  opacity: 1;
+}
+
+/* line 42, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .dot {
+  opacity: 1;
+}
+
+/* line 46, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .purple {
+  stroke: #B191FF;
+}
+
+/* line 50, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .lime {
+  stroke: #DCE2AA;
+}
+
+/* line 54, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .plum {
+  stroke: #843B62;
+}
+
+/* line 58, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+svg .blue {
+  stroke: #241E4E;
+}
+
+/* line 63, ../../../../../../xampp/htdocs/PROJECT-ECHO/resources/css/theme_bright/more/text_write.scss */
+#play {
+  font-size: 10px;
+  color: #fff;
+  display: block;
+  position: 'relative';
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  opacity: 0;
+}

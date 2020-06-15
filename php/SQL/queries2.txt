@@ -1,0 +1,22 @@
+CREATE DATABASE echo_db;
+CREATE TABLE users(
+    user_id int NOT NULL AUTO_INCREMENT,
+    user_password varchar(1000) NOT NULL, 
+    user_email varchar(500) NOT NULL,
+    password_hash varchar(1000) NOT NULL,
+    active int(1) DEFAULT 0,
+    firstName varchar(200),
+    lastName varchar(200),
+    state varchar(200),
+    city varchar(200),
+    phoneNumber varchar(200),
+    avatar varchar(500),
+    PRIMARY KEY(user_id)    
+);
+CREATE TABLE forum(
+    id int NOT NULL AUTO_INCREMENT,
+    forum_title varchar(100),
+    forum_comment varchar(5000),
+    
+    
+);
